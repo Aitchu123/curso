@@ -1,6 +1,6 @@
-# Certificados - Site de Diplomas e Certificados
+# Curso de Instrumentação Cirúrgica
 
-Site desenvolvido em React + TypeScript + Vite para diplomas e certificados de ensino superior.
+Site do curso de instrumentação cirúrgica com 150 horas certificadas, ministrado pelo maior influenciador de instrumentação do Brasil.
 
 ## 🚀 Tecnologias
 
@@ -10,9 +10,15 @@ Site desenvolvido em React + TypeScript + Vite para diplomas e certificados de e
 - Tailwind CSS
 - React Router DOM
 - i18next (Internacionalização)
-- Firebase
-- Supabase
-- Stripe
+
+## 📚 Sobre o Curso
+
+- **150 horas certificadas** pela Escola Urolaser
+- **4 especialidades**: Urologia, Ginecologia, Plástica e Cirurgia Geral
+- **Professor**: @Instrumentandoo (maior influenciador do Brasil)
+- **Modalidade**: Online
+- **Duração**: 1 mês
+- **Certificado**: Reconhecido com CNPJ ativo
 
 ## 📦 Instalação
 
@@ -26,7 +32,7 @@ npm install
 npm run dev
 ```
 
-O site estará disponível em `http://localhost:3000`
+O site estará disponível em `http://localhost:3000/certificados`
 
 ## 🏗️ Build
 
@@ -38,24 +44,27 @@ Os arquivos de produção serão gerados na pasta `out/`
 
 ## 🌐 Deploy
 
+### EasyPanel
+1. Crie um novo app no EasyPanel
+2. Conecte ao repositório GitHub
+3. Configure:
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `out`
+   - **Node Version:** 18+
+
 ### Hostinger
 1. Conecte seu repositório GitHub ao Hostinger
 2. Configure o build command: `npm run build`
 3. Configure o output directory: `out`
 
-### EasyPanel
-1. Crie um novo app no EasyPanel
-2. Conecte ao repositório GitHub
-3. Configure as variáveis de ambiente se necessário
-4. Deploy automático será feito a cada push
-
 ## 📁 Estrutura do Projeto
 
 ```
 src/
-├── pages/          # Páginas da aplicação
-├── router/         # Configuração de rotas
-├── i18n/          # Configuração de internacionalização
+├── pages/
+│   └── instrumentando/    # Página principal do curso
+├── router/               # Configuração de rotas
+├── i18n/                # Configuração de internacionalização
 └── ...
 ```
 
@@ -64,6 +73,12 @@ src/
 - Base path configurável via `BASE_PATH` environment variable
 - Suporte a preview mode via `IS_PREVIEW` environment variable
 - Build otimizado com source maps
+
+## 📞 Contato
+
+- **WhatsApp**: +55 21 97276-2708
+- **Instagram**: @instrumentandoo
+- **Escola**: Urolaser
 
 ## 📄 Licença
 
