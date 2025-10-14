@@ -1,0 +1,12 @@
+
+User-agent: *
+Allow: /
+
+# Páginas importantes
+Allow: /recuperacao
+
+# Sitemap
+Sitemap: /sitemap.xml
+
+# Crawl-delay para não sobrecarregar o servidor
+Crawl-delay: 1
