@@ -22,8 +22,20 @@ FROM nginx:alpine
 # Copiar arquivos buildados
 COPY --from=builder /app/out /usr/share/nginx/html
 
-# Copiar configuração customizada do Nginx
-COPY nginx.conf /etc/nginx/nginx.conf
+# Criar configuração simples do Nginx para SPA
+RUN echo 'server { \
+    listen 80; \
+    server_name _; \
+    root /usr/share/nginx/html; \
+    index index.html; \
+    location / { \
+        try_files $uri $uri/ /index.html; \
+    } \
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ { \
+        expires 1y; \
+        add_header Cache-Control "public, immutable"; \
+    } \
+}' > /etc/nginx/conf.d/default.conf
 
 # Expor porta 80
 EXPOSE 80
