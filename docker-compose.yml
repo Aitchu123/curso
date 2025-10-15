@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  instrumentacao-app:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.instrumentacao.rule=Host(`instrumentacao.com.br`)"
+      - "traefik.http.routers.instrumentacao.tls=true"
+      - "traefik.http.routers.instrumentacao.tls.certresolver=letsencrypt"

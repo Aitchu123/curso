@@ -12,7 +12,6 @@ import {
   Play,
   Instagram,
   Building2,
-  MessageCircle,
   Scissors,
   Stethoscope
 } from 'lucide-react';
@@ -22,7 +21,6 @@ import { Button } from '../../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Badge } from '../../components/ui/badge';
 import { FadeIn } from '../../components/animated/fade-in';
-import { FloatingWhatsApp } from '../../components/animated/floating-whatsapp';
 import { StatsCounter } from '../../components/animated/stats-counter';
 
 export default function Instrumentando() {
@@ -73,12 +71,7 @@ export default function Instrumentando() {
     window.open('https://pay.kiwify.com.br/MpgIImH', '_blank');
   };
 
-  const openWhatsApp = () => {
-    const whatsappNumber = "5521972762708";
-    const whatsappMessage = "Olá! Tenho interesse no Curso de Instrumentação Cirúrgica. Gostaria de mais informações sobre as 4 especialidades e certificação.";
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-    window.open(url, '_blank');
-  };
+
 
   useEffect(() => {
     // Buscar dados do Instagram ao carregar a página
@@ -181,7 +174,7 @@ export default function Instrumentando() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-['Inter'] overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-green-800">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-green-800 pt-16 md:pt-20">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-green-900/20"></div>
         
@@ -224,16 +217,6 @@ export default function Instrumentando() {
                   >
                     <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                     INSCREVER-SE AGORA
-                  </Button>
-                  
-                  <Button
-                    onClick={openWhatsApp}
-                    variant="whatsapp"
-                    size="xl"
-                    className="group"
-                  >
-                    <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                    FALAR NO WHATSAPP
                   </Button>
                 </div>
               </motion.div>
@@ -527,8 +510,7 @@ export default function Instrumentando() {
         </div>
       </footer>
 
-      {/* Floating WhatsApp Button */}
-      <FloatingWhatsApp onClick={openWhatsApp} />
+
 
       {/* Modal de Confirmação */}
       {showModal && (
