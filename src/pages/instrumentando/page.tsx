@@ -22,6 +22,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/ca
 import { Badge } from '../../components/ui/badge';
 import { FadeIn } from '../../components/animated/fade-in';
 import { StatsCounter } from '../../components/animated/stats-counter';
+import { Section } from '../../components/layout/Section';
+import { Container } from '../../components/layout/Container';
+import { Grid } from '../../components/layout/Grid';
+import { RainbowButton } from '../../components/magicui/rainbow-button';
+import { AuroraText } from '../../components/magicui/aurora-text';
+import { MagicCard } from '../../components/magicui/magic-card';
 
 export default function Instrumentando() {
   const [showModal, setShowModal] = useState(false);
@@ -172,14 +178,18 @@ export default function Instrumentando() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 font-['Inter'] overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-green-50 font-['Inter'] overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-green-800 pt-16 md:pt-20">
+      <Section 
+        background="gradient" 
+        padding="xl" 
+        className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20"
+      >
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-green-900/20"></div>
         
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
+        <Container className="relative z-10">
+          <Grid cols={{ default: 1, lg: 2 }} gap="xl" className="items-center">
             {/* Content */}
             <FadeIn direction="left" className="text-center lg:text-left">
               <motion.div
@@ -199,9 +209,12 @@ export default function Instrumentando() {
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
                   Curso de{" "}
-                  <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                  <AuroraText 
+                    className="text-4xl sm:text-5xl lg:text-6xl font-bold"
+                    colors={["#00ff88", "#00d4ff", "#ff0080", "#ffaa00"]}
+                  >
                     Instrumentação Cirúrgica
-                  </span>
+                  </AuroraText>
                 </h1>
                 
                 <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
@@ -209,15 +222,13 @@ export default function Instrumentando() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-6">
-                  <Button
+                  <RainbowButton
                     onClick={handlePayment}
-                    variant="gradient"
-                    size="xl"
-                    className="group"
+                    className="h-14 px-8 text-lg font-bold"
                   >
-                    <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                    <Play className="w-5 h-5 mr-2" />
                     INSCREVER-SE AGORA
-                  </Button>
+                  </RainbowButton>
                 </div>
               </motion.div>
             </FadeIn>
@@ -229,19 +240,19 @@ export default function Instrumentando() {
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-600 to-green-600 p-1">
+                <MagicCard className="p-1 bg-gradient-to-br from-blue-600 to-green-600">
                   <iframe
                     src="https://drive.google.com/file/d/153-nwK23h9ErN6NYl52NaIFaSr_tKb0m/preview"
                     className="w-full h-[500px] lg:h-[600px] rounded-xl"
                     allow="autoplay"
                     title="Apresentação do Curso de Instrumentação Cirúrgica"
                   ></iframe>
-                </div>
+                </MagicCard>
               </motion.div>
             </FadeIn>
-          </div>
-        </div>
-      </section>
+          </Grid>
+        </Container>
+      </Section>
 
       {/* Professor Section */}
       <section className="py-16 lg:py-24 bg-white">
@@ -299,9 +310,7 @@ export default function Instrumentando() {
                       />
                     </div>
                     
-                    <Button
-                      asChild
-                      variant="gradient"
+                    <RainbowButton
                       className="w-full sm:w-auto"
                     >
                       <a 
@@ -313,7 +322,7 @@ export default function Instrumentando() {
                         <Instagram className="w-5 h-5 mr-2" />
                         Seguir no Instagram
                       </a>
-                    </Button>
+                    </RainbowButton>
                   </CardContent>
                 </Card>
                 
@@ -360,8 +369,14 @@ export default function Instrumentando() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {specialties.map((specialty, index) => (
               <FadeIn key={index} delay={index * 0.1}>
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group">
-                  <CardContent className="p-6 text-center">
+                <MagicCard 
+                  className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group"
+                  gradientFrom="#9E7AFF"
+                  gradientTo="#FE8BBB"
+                  gradientColor="#ffffff"
+                  gradientOpacity={0.1}
+                >
+                  <div className="p-6 text-center">
                     <motion.div 
                       className={`w-16 h-16 bg-gradient-to-br ${specialty.color} rounded-full flex items-center justify-center mx-auto mb-4 text-white group-hover:scale-110 transition-transform duration-300`}
                       whileHover={{ rotate: 360 }}
@@ -373,8 +388,8 @@ export default function Instrumentando() {
                     <p className="text-white/90 text-sm leading-relaxed">
                       {specialty.description}
                     </p>
-                  </CardContent>
-                </Card>
+                  </div>
+                </MagicCard>
               </FadeIn>
             ))}
           </div>
@@ -481,15 +496,13 @@ export default function Instrumentando() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <Button
-                  onClick={handlePayment}
-                  variant="gradient"
-                  size="xl"
+                <RainbowButton
+                  onClick={handlePayment}                  
                   className="group text-lg px-12 py-6"
                 >
                   <Play className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
                   INSCREVER-SE AGORA
-                </Button>                              
+                </RainbowButton>                              
               </div>
             </motion.div>
           </FadeIn>
@@ -536,20 +549,18 @@ export default function Instrumentando() {
                 Obrigado pelo interesse! Em breve entraremos em contato com mais detalhes sobre o curso.
               </p>
               <div className="flex gap-4">
-                <Button
+                <RainbowButton
                   onClick={handlePayment}
-                  variant="gradient"
                   className="flex-1"
                 >
                   Inscrever-se Agora
-                </Button>
-                <Button
+                </RainbowButton>
+                <RainbowButton
                   onClick={() => setShowModal(false)}
-                  variant="outline"
                   className="flex-1"
                 >
                   Fechar
-                </Button>
+                </RainbowButton>
               </div>
             </div>
           </motion.div>

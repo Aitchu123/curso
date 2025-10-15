@@ -41,6 +41,11 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "color-1": "hsl(var(--color-1))",
+        "color-2": "hsl(var(--color-2))",
+        "color-3": "hsl(var(--color-3))",
+        "color-4": "hsl(var(--color-4))",
+        "color-5": "hsl(var(--color-5))"
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -56,6 +61,8 @@ const config: Config = {
         'slide-up': 'slideUp 0.5s ease-out',
         'bounce-slow': 'bounce 2s infinite',
         'pulse-slow': 'pulse 3s infinite',
+        'rainbow': 'rainbow var(--speed, 2s) infinite linear',
+        'aurora': 'aurora 4s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -66,6 +73,22 @@ const config: Config = {
           '0%': { opacity: '0', transform: 'translateY(30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        rainbow: {
+          '0%': {
+            'background-position': '0%'
+          },
+          '100%': {
+            'background-position': '200%'
+          }
+        },
+        aurora: {
+          '0%, 100%': {
+            'background-position': '0% 50%'
+          },
+          '50%': {
+            'background-position': '100% 50%'
+          }
+        }
       },
       container: {
         center: true,
