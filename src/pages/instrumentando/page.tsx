@@ -221,6 +221,30 @@ export default function Instrumentando() {
                   150 horas certificadas • 4 especialidades • Professor @Instrumentandoo
                 </p>
 
+                {/* Destaque CNIC */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 rounded-2xl p-6 max-w-2xl"
+                >
+                  <div className="flex items-center justify-center mb-3">
+                    <Award className="w-6 h-6 text-green-400 mr-2" />
+                    <span className="text-green-400 font-bold text-lg">CERTIFICADO RECONHECIDO</span>
+                  </div>
+                  <p className="text-white text-center text-lg leading-relaxed">
+                    Com nosso <span className="font-bold text-green-300">CERTIFICADO</span> é possível adquirir a{" "}
+                    <span className="font-bold text-blue-300">"Carteirinha do CNIC"</span> - a Carteira de Instrumentador Cirúrgico 
+                    do <span className="font-semibold">Cadastro Nacional de Instrumentadores Cirúrgicos</span>
+                  </p>
+                  <div className="flex justify-center mt-4">
+                    <div className="flex items-center bg-white/10 px-4 py-2 rounded-full">
+                      <CheckCircle2 className="w-5 h-5 text-green-400 mr-2" />
+                      <span className="text-green-300 font-semibold">Reconhecimento Nacional</span>
+                    </div>
+                  </div>
+                </motion.div>
+
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-6">
                   <RainbowButton
                     onClick={handlePayment}
