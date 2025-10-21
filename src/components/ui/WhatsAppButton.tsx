@@ -3,7 +3,7 @@ import React from 'react';
 const WhatsAppButton: React.FC = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent('Quero saber mais');
-    window.open(`http://wa.me/5512982044856?text=${message}`, '_blank');
+    window.open(`http://wa.me/5512982640614?text=${message}`, '_blank');
   };
 
   return (
