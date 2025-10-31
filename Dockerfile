@@ -1,5 +1,5 @@
-# Use Node.js 18 Alpine como base
-FROM node:18-alpine AS builder
+# Use Node.js 20 Alpine como base
+FROM node:20-alpine AS builder
 
 # Definir diretório de trabalho
 WORKDIR /app
