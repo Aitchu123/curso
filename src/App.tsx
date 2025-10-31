@@ -1,13 +1,24 @@
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, useLocation } from 'react-router-dom'
 import { AppRoutes } from './router'
 import WhatsAppButton from './components/ui/WhatsAppButton'
 
+function WhatsAppButtonWrapper() {
+  const location = useLocation();
+  
+  // Só mostra o botão WhatsApp original na página principal (/)
+  // A página /matheus tem seu próprio botão
+  if (location.pathname === '/matheus') {
+    return null;
+  }
+  
+  return <WhatsAppButton />;
+}
 
 function App() {
   return (
     <BrowserRouter basename={__BASE_PATH__}>
       <AppRoutes />
-      <WhatsAppButton />
+      <WhatsAppButtonWrapper />
     </BrowserRouter>
   )
 }
