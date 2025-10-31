@@ -75,7 +75,7 @@ export default function matheus() {
       });
     }
     
-    window.open('https://pay.kiwify.com.br/M2xDjBQ', '_blank');
+    window.open('https://pay.kiwify.com.br/M2xDjBQ?afid=bQ1C8bsk', '_blank');
   };
 
 
