@@ -7,7 +7,8 @@ function WhatsAppButtonWrapper() {
   
   // Só mostra o botão WhatsApp original na página principal (/)
   // A página /matheus tem seu próprio botão
-  if (location.pathname === '/matheus') {
+  // A página /home tem seu próprio botão
+  if (location.pathname === '/matheus' || location.pathname === '/home') {
     return null;
   }
   
