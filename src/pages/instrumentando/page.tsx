@@ -74,7 +74,7 @@ export default function Instrumentando() {
       });
     }
     
-    window.open('https://pay.kiwify.com.br/MpgIImH', '_blank');
+    window.open('https://pay.kiwify.com.br/M2xDjBQ', '_blank');
   };
 
 
