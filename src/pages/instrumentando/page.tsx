@@ -278,6 +278,45 @@ export default function Instrumentando() {
         </Container>
       </Section>
 
+      {/* Histórico Escolar */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeIn className="max-w-5xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800">Histórico Escolar</h2>
+
+            <Card className="bg-white shadow-xl overflow-hidden">
+              <CardContent className="p-0">
+                <img
+                  src="/historico-escolar.jpg"
+                  alt="Histórico Escolar: grade escolar e verso do certificado do aluno"
+                  className="w-full h-auto"
+                />
+
+                <div className="p-6">
+                  <p className="text-gray-700 text-lg">
+                    Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno — o Histórico
+                    Escolar. Você encontra os conteúdos básicos, avançados e práticos, além de módulos por vídeo em
+                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">150 horas certificadas</span>
+                    e formação reconhecida.
+                  </p>
+                  <p className="text-gray-700 text-lg mt-4">
+                    Se você quer atuar com segurança e destaque como instrumentador(a) cirúrgico(a), faça sua matrícula
+                    agora e garanta sua vaga.
+                  </p>
+
+                  <div className="mt-6">
+                    <RainbowButton onClick={handlePayment} className="group text-lg px-10 py-5">
+                      <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                      INSCREVER-SE AGORA
+                    </RainbowButton>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Professor Section */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
