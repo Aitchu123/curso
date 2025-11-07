@@ -287,7 +287,7 @@ export default function Instrumentando() {
             <Card className="bg-white shadow-xl overflow-hidden">
               <CardContent className="p-0">
                 <img
-                  src="/historico-escolar.jpg"
+                  src="/historico-escolar-v2.jpg"
                   alt="Histórico Escolar: grade escolar e verso do certificado do aluno"
                   className="w-full h-auto"
                 />
