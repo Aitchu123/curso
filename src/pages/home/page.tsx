@@ -29,6 +29,7 @@ import { RainbowButton } from '../../components/magicui/rainbow-button';
 import { AuroraText } from '../../components/magicui/aurora-text';
 import { MagicCard } from '../../components/magicui/magic-card';
 import WhatsAppButtonFoguete from '../../components/ui/WhatsAppButtonFoguete';
+import PromoBannerBF from '../../components/ui/PromoBannerBF';
 
 export default function Instrumentando() {
   const [showModal, setShowModal] = useState(false);
@@ -221,6 +222,9 @@ export default function Instrumentando() {
                 <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
                   150 horas certificadas • 4 especialidades • Professor @Instrumentandoo
                 </p>
+
+                {/* Black Friday High Conversion Banner */}
+                <PromoBannerBF onBuy={handlePayment} />
 
                 {/* Destaque CNIC */}
                 <motion.div
