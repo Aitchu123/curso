@@ -223,8 +223,7 @@ export default function Instrumentando() {
                   150 horas certificadas • 4 especialidades • Professor @Instrumentandoo
                 </p>
 
-                {/* Black Friday High Conversion Banner */}
-                <PromoBannerBF onBuy={handlePayment} />
+                
 
                 {/* Destaque CNIC */}
                 <motion.div
@@ -277,6 +276,9 @@ export default function Instrumentando() {
                     title="Apresentação do Curso de Instrumentação Cirúrgica"
                   ></iframe>
                 </MagicCard>
+                <div className="mt-6">
+                  <PromoBannerBF onBuy={handlePayment} />
+                </div>
               </motion.div>
             </FadeIn>
           </Grid>
