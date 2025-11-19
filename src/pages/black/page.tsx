@@ -588,7 +588,7 @@ export default function BlackFriday() {
       </footer>
 
       {/* WhatsApp Button específico para página Black Friday */}
-      <WhatsAppButtonFoguete />
+      <WhatsAppButtonFoguete phoneNumber="553591021650" />
     </div>
   );
 }
