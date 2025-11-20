@@ -29,7 +29,7 @@ import { RainbowButton } from '../../components/magicui/rainbow-button';
 import { AuroraText } from '../../components/magicui/aurora-text';
 import { MagicCard } from '../../components/magicui/magic-card';
 import WhatsAppButtonFoguete from '../../components/ui/WhatsAppButtonFoguete';
-import PromoBannerBF from '../../components/ui/PromoBannerBF';
+import PromoBannerHome from '../../components/ui/PromoBannerHome';
 
 export default function Instrumentando() {
   const [showModal, setShowModal] = useState(false);
@@ -277,7 +277,7 @@ export default function Instrumentando() {
                   ></iframe>
                 </MagicCard>
                 <div className="mt-6">
-                  <PromoBannerBF onBuy={handlePayment} />
+                  <PromoBannerHome onBuy={handlePayment} />
                 </div>
               </motion.div>
             </FadeIn>
