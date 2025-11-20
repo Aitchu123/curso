@@ -29,6 +29,7 @@ import { RainbowButton } from '../../components/magicui/rainbow-button';
 import { AuroraText } from '../../components/magicui/aurora-text';
 import { MagicCard } from '../../components/magicui/magic-card';
 import WhatsAppButtonMatheus from '../../components/ui/WhatsAppButtonMatheus';
+import PromoBannerHome from '../../components/ui/PromoBannerHome';
 
 export default function matheus() {
   const [showModal, setShowModal] = useState(false);
@@ -273,6 +274,9 @@ export default function matheus() {
                     title="Apresentação do Curso de Instrumentação Cirúrgica"
                   ></iframe>
                 </MagicCard>
+                <div className="mt-6">
+                  <PromoBannerHome onBuy={handlePayment} />
+                </div>
               </motion.div>
             </FadeIn>
           </Grid>
