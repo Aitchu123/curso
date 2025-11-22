@@ -4,6 +4,7 @@ import Instrumentando from "../pages/instrumentando/page";
 import Matheus from "../pages/matheus/page";
 import Home from "../pages/home/page";
 import BlackFriday from "../pages/black/page";
+import PTPage from "../pages/pt/page";
 
 
 const routes: RouteObject[] = [
@@ -22,6 +23,10 @@ const routes: RouteObject[] = [
   {
     path: "/black",
     element: <BlackFriday />,
+  },
+  {
+    path: "/pt",
+    element: <PTPage />,
   },
 ];
 
