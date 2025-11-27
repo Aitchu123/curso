@@ -9,7 +9,8 @@ function WhatsAppButtonWrapper() {
   // A página /matheus tem seu próprio botão
   // A página /home tem seu próprio botão
   // A página /black tem seu próprio botão
-  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/black') {
+  // A página /uro tem seu próprio botão
+  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/black' || location.pathname === '/uro') {
     return null;
   }
   
