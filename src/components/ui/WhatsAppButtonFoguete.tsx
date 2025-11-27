@@ -2,12 +2,13 @@ import React from 'react';
 
 interface WhatsAppButtonProps {
   phoneNumber?: string;
+  message?: string;
 }
 
-const WhatsAppButtonMatheus: React.FC<WhatsAppButtonProps> = ({ phoneNumber = '5512981094006' }) => {
+const WhatsAppButtonMatheus: React.FC<WhatsAppButtonProps> = ({ phoneNumber = '5512981094006', message = 'Quero saber mais' }) => {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent('Quero saber mais');
-    window.open(`http://wa.me/${phoneNumber}?text=${message}`, '_blank');
+    const whatsappMessage = encodeURIComponent(message);
+    window.open(`http://wa.me/${phoneNumber}?text=${whatsappMessage}`, '_blank');
   };
 
   return (
