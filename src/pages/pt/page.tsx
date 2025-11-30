@@ -588,7 +588,7 @@ export default function PTPage() {
       </footer>
 
       {/* WhatsApp Button específico para página Portugal */}
-      <WhatsAppButtonFoguete phoneNumber="553591021650" />
+      <WhatsAppButtonFoguete phoneNumber="5512991860706" />
     </div>
   );
 }
