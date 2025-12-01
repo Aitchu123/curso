@@ -3,7 +3,17 @@ import React from 'react';
 const WhatsAppButtonMatheus: React.FC = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent('Quero saber mais');
-    window.open(`http://wa.me/559181146851?text=${message}`, '_blank');
+    const pool = ['5512991860706', '553591021650'];
+    let idx = 0;
+    try {
+      const buf = new Uint32Array(1);
+      window.crypto.getRandomValues(buf);
+      idx = buf[0] % pool.length;
+    } catch {
+      idx = Math.floor(Math.random() * pool.length);
+    }
+    const targetNumber = pool[idx];
+    window.open(`http://wa.me/${targetNumber}?text=${message}`, '_blank');
   };
 
   return (

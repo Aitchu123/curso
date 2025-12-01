@@ -9,7 +9,15 @@ const WhatsAppButtonMatheus: React.FC<WhatsAppButtonProps> = ({ phoneNumber = '5
   const handleWhatsAppClick = () => {
     const whatsappMessage = encodeURIComponent(message);
     const pool = ['5512991860706', '553591021650'];
-    const targetNumber = pool[Math.floor(Math.random() * pool.length)];
+    let idx = 0;
+    try {
+      const buf = new Uint32Array(1);
+      window.crypto.getRandomValues(buf);
+      idx = buf[0] % pool.length;
+    } catch {
+      idx = Math.floor(Math.random() * pool.length);
+    }
+    const targetNumber = pool[idx];
     window.open(`http://wa.me/${targetNumber}?text=${whatsappMessage}`, '_blank');
   };
 
