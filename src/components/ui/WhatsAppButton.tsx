@@ -3,7 +3,19 @@ import React from 'react';
 const WhatsAppButton: React.FC = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent('Quero saber mais');
-    window.open(`http://wa.me/5512991860706?text=${message}`, '_blank');
+    const key = 'whatsappRoutingNumber';
+    let targetNumber: string | null = null;
+    try {
+      targetNumber = sessionStorage.getItem(key);
+      if (!targetNumber) {
+        const pool = ['5512991860706', '553591021650'];
+        targetNumber = pool[Math.floor(Math.random() * pool.length)];
+        sessionStorage.setItem(key, targetNumber);
+      }
+    } catch {
+      targetNumber = '5512991860706';
+    }
+    window.open(`http://wa.me/${targetNumber}?text=${message}`, '_blank');
   };
 
   return (
