@@ -8,18 +8,8 @@ interface WhatsAppButtonProps {
 const WhatsAppButtonMatheus: React.FC<WhatsAppButtonProps> = ({ phoneNumber = '5512981094006', message = 'Quero saber mais' }) => {
   const handleWhatsAppClick = () => {
     const whatsappMessage = encodeURIComponent(message);
-    const key = 'whatsappRoutingNumber';
-    let targetNumber: string | null = null;
-    try {
-      targetNumber = sessionStorage.getItem(key);
-      if (!targetNumber) {
-        const pool = ['5512991860706', '553591021650'];
-        targetNumber = pool[Math.floor(Math.random() * pool.length)];
-        sessionStorage.setItem(key, targetNumber);
-      }
-    } catch {
-      targetNumber = '5512991860706';
-    }
+    const pool = ['5512991860706', '553591021650'];
+    const targetNumber = pool[Math.floor(Math.random() * pool.length)];
     window.open(`http://wa.me/${targetNumber}?text=${whatsappMessage}`, '_blank');
   };
 
