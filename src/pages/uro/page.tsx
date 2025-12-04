@@ -502,45 +502,40 @@ export default function URO() {
         </div>
       </div>
 
-      {/* Depoimentos Urolaser Section */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800">
-              Equipes de cirurgiões e empresas de todo Brasil solicitam indicações para Urolaser
-            </h2>
-            <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-              Profissionais formados pela nossa escola são reconhecidos e indicados em todo território nacional. 
-              Veja o depoimento de alunos que foram contratados através das indicações da Urolaser.
-            </p>
-            
-            <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 shadow-xl">
-              <div className="aspect-video max-w-3xl mx-auto">
-                <iframe
-                  src="https://drive.google.com/file/d/1zDDW7xDsOX9WaDRTw56V5BCcfRlpHKuE/preview"
-                  className="w-full h-full rounded-xl"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  title="Depoimentos de alunos indicados pela Urolaser"
-                ></iframe>
-              </div>
-              <div className="mt-8 text-center">
-                <p className="text-lg text-gray-700 mb-6">
-                  "Fui indicado pela Urolaser e em menos de 15 dias já estava trabalhando em uma das maiores clínicas de São Paulo. 
-                  O reconhecimento no mercado é imediato quando você tem a certificação da escola."
-                </p>
-                <div className="flex items-center justify-center gap-2">
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
+          <FadeIn className="max-w-5xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800 text-center">Histórico Escolar</h2>
+
+            <Card className="bg-white shadow-xl overflow-hidden">
+              <CardContent className="p-0">
+                <img
+                  src="/historico-escolar-v2.jpg"
+                  alt="Histórico Escolar: grade escolar e verso do certificado do aluno"
+                  className="w-full h-auto"
+                />
+
+                <div className="p-6">
+                  <p className="text-gray-700 text-lg text-center lg:text-center">
+                    Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno — o Histórico
+                    Escolar. Você encontra os conteúdos básicos, avançados e práticos, além de módulos por vídeo em
+                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">150 horas certificadas</span>
+                    e formação reconhecida.
+                  </p>
+                  <p className="text-gray-700 text-lg mt-4 text-center lg:text-center">
+                    Se você quer atuar com segurança e destaque como instrumentador(a) cirúrgico(a), faça sua matrícula
+                    agora e garanta sua vaga.
+                  </p>
+
+                  <div className="mt-6 flex justify-center">
+                    <RainbowButton onClick={handlePayment} className="group text-lg px-10 py-5">
+                      <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                      INSCREVER-SE AGORA
+                    </RainbowButton>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-4">
-                  +2.500 alunos já foram contratados através de indicações da Urolaser em todo Brasil
-                </p>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </FadeIn>
         </div>
       </section>
