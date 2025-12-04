@@ -190,14 +190,14 @@ export default function PTPage() {
         <Container className="relative z-10">
           <Grid cols={{ default: 1, lg: 2 }} gap="xl" className="items-center">
             {/* Content */}
-            <FadeIn direction="left" className="text-center lg:text-left">
+            <FadeIn direction="left" className="text-center lg:text-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 className="space-y-6"
               >
-                <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
+                <div className="flex flex-wrap gap-2 justify-center lg:justify-center mb-6">
                   {benefits.map((benefit, index) => (
                     <Badge key={index} variant="secondary" className="bg-white/10 text-white border-white/20 backdrop-blur-sm">
                       {benefit.icon}
@@ -246,7 +246,7 @@ export default function PTPage() {
                   </div>
                 </motion.div>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-6">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-center pt-6">
                   <RainbowButton
                     onClick={handlePayment}
                     className="h-14 px-8 text-lg font-bold"
@@ -354,7 +354,7 @@ export default function PTPage() {
                   </CardContent>
                 </Card>
                 
-                <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div className="grid md:grid-cols-2 gap-6 text-left lg:text-center">
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Building2 className="text-blue-500 text-2xl mr-3" />
