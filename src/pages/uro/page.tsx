@@ -269,7 +269,7 @@ export default function URO() {
               >
                 <MagicCard className="p-1 bg-gradient-to-br from-blue-600 to-green-600">
                   <iframe
-                    src="https://drive.google.com/file/d/1hd_d76JAsrB-6zvjn_v3kXobdDolmqBH/preview"
+                    src="https://drive.google.com/file/d/1-S9UTWvxoaJF8oGOixGi4OUz0IsFgDaW/preview"
                     className="w-full h-[500px] lg:h-[600px] rounded-xl"
                     allow="autoplay"
                     title="Apresentação do Curso de Instrumentação Cirúrgica"
