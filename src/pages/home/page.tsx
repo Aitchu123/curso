@@ -523,48 +523,7 @@ export default function Instrumentando() {
         </div>
       </section>
 
-      {/* Depoimentos Urolaser Section */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800">
-              Equipes de cirurgiões e empresas de todo Brasil solicitam indicações para Urolaser
-            </h2>
-            <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-              Profissionais formados pela nossa escola são reconhecidos e indicados em todo território nacional. 
-              Veja o depoimento de alunos que foram contratados através das indicações da Urolaser.
-            </p>
-            
-            <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 shadow-xl">
-              <div className="aspect-video max-w-3xl mx-auto">
-                <iframe
-                  src="https://drive.google.com/file/d/1zDDW7xDsOX9WaDRTw56V5BCcfRlpHKuE/preview"
-                  className="w-full h-full rounded-xl"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  title="Depoimentos de alunos indicados pela Urolaser"
-                ></iframe>
-              </div>
-              <div className="mt-8 text-center">
-                <p className="text-lg text-gray-700 mb-6">
-                  "Fui indicado pela Urolaser e em menos de 15 dias já estava trabalhando em uma das maiores clínicas de São Paulo. 
-                  O reconhecimento no mercado é imediato quando você tem a certificação da escola."
-                </p>
-                <div className="flex items-center justify-center gap-2">
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                </div>
-                <p className="text-sm text-gray-600 mt-4">
-                  +2.500 alunos já foram contratados através de indicações da Urolaser em todo Brasil
-                </p>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
+      
 
       {/* CTA Final Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-green-900 text-white">
