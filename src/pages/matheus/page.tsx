@@ -95,7 +95,7 @@ export default function matheus() {
       "@context": "https://schema.org",
       "@type": "Course",
       "name": "Curso de Instrumentação Cirúrgica - 4 Especialidades",
-      "description": "Curso completo de instrumentação cirúrgica com 150 horas certificadas. Especialidades em urologia, ginecologia, plástica e cirurgia geral. Cirurgias de vídeo e abertas.",
+      "description": "Curso completo de instrumentação cirúrgica com 320 horas certificadas. Especialidades em urologia, ginecologia, plástica e cirurgia geral. Cirurgias de vídeo e abertas.",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "Escola Urolaser",
@@ -111,7 +111,7 @@ export default function matheus() {
       "educationalLevel": "Professional",
       "courseMode": "Online",
       "timeRequired": "P1M",
-      "totalTime": "PT150H",
+      "totalTime": "PT320H",
       "coursePrerequisites": "Conhecimento básico em área da saúde",
       "teaches": [
         "Instrumentação em Urologia",
@@ -124,7 +124,7 @@ export default function matheus() {
       "offers": {
         "@type": "Offer",
         "name": "Curso de Instrumentação Cirúrgica",
-        "description": "Curso completo com 150 horas certificadas em 4 especialidades",
+        "description": "Curso completo com 320 horas certificadas em 4 especialidades",
         "availability": "https://schema.org/InStock",
         "validFrom": "2025-01-01",
         "priceValidUntil": "2025-12-31"
@@ -173,7 +173,7 @@ export default function matheus() {
   ];
 
   const benefits = [
-    { icon: <Shield className="w-6 h-6" />, text: "150 horas certificadas" },
+    { icon: <Shield className="w-6 h-6" />, text: "320 horas certificadas" },
     { icon: <Clock className="w-6 h-6" />, text: "1 mês de duração" },
     { icon: <Users className="w-6 h-6" />, text: "4 especialidades" },
     { icon: <Award className="w-6 h-6" />, text: "Certificado reconhecido" }
@@ -220,7 +220,7 @@ export default function matheus() {
                 </h1>
                 
                 <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
-                  150 horas certificadas • 4 especialidades • Professor @Instrumentandoo
+                  320 horas certificadas • 4 especialidades • Professor @Instrumentandoo
                 </p>
 
                 {/* Destaque CNIC */}
@@ -507,7 +507,7 @@ export default function matheus() {
                   <p className="text-gray-700 text-lg text-center lg:text-center">
                     Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno — o Histórico
                     Escolar. Você encontra os conteúdos básicos, avançados e práticos, além de módulos por vídeo em
-                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">150 horas certificadas</span>
+                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">320 horas certificadas</span>
                     e formação reconhecida.
                   </p>
                   <p className="text-gray-700 text-lg mt-4 text-center lg:text-center">
@@ -544,13 +544,13 @@ export default function matheus() {
               </h2>
               <p className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Torne-se um especialista em instrumentação cirúrgica com o maior influenciador do Brasil. 
-                150 horas certificadas em 4 especialidades!
+                320 horas certificadas em 4 especialidades!
               </p>
               
               <div className="flex flex-wrap gap-6 justify-center items-center mb-12">
                 {[
                   { icon: <Clock className="w-6 h-6" />, text: "1 Mês de Duração" },
-                  { icon: <Award className="w-6 h-6" />, text: "150 Horas Certificadas" },
+                  { icon: <Award className="w-6 h-6" />, text: "320 Horas Certificadas" },
                   { icon: <Star className="w-6 h-6" />, text: "4 Especialidades" }
                 ].map((item, index) => (
                   <FadeIn key={index} delay={index * 0.1}>
