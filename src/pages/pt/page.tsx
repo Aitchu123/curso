@@ -173,7 +173,8 @@ export default function PTPage() {
     { icon: <Shield className="w-6 h-6" />, text: "320 horas certificadas" },
     { icon: <Clock className="w-6 h-6" />, text: "1 mês de duração" },
     { icon: <Users className="w-6 h-6" />, text: "4 especialidades" },
-    { icon: <Award className="w-6 h-6" />, text: "Certificado reconhecido" }
+    { icon: <Award className="w-6 h-6" />, text: "Certificado reconhecido" },
+    { icon: <Play className="w-6 h-6" />, text: "TOTALMENTE ONLINE (EAD)" }
   ];
 
   return (
