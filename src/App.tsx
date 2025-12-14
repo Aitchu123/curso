@@ -26,10 +26,10 @@ function FixedEnrollmentFooter() {
     <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm border-t border-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
         <span className="text-white text-sm sm:text-base">
-          faça sua matricula e comece agora mesmo, 320 horas no certificado VÁLIDO em todo brasil
+          <span className="font-extrabold text-green-400">Matricule-se agora</span> e comece já • Certificado de <span className="font-bold">320h</span> <span className="font-extrabold text-green-400">VÁLIDO</span> em todo o Brasil
         </span>
         <RainbowButton onClick={handleClick} className="px-6 py-2 text-sm sm:text-base font-semibold">
-          FAZER MATRÍCULA
+          FAZER MATRÍCULA AGORA
         </RainbowButton>
       </div>
     </div>
