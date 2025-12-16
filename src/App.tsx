@@ -19,8 +19,12 @@ function WhatsAppButtonWrapper() {
 }
 
 function FixedEnrollmentFooter() {
+  const location = useLocation();
+  const targetUrl = location.pathname === '/uro'
+    ? 'https://pay.kiwify.com.br/USckAFA'
+    : 'https://pay.kiwify.com.br/M2xDjBQ';
   const handleClick = () => {
-    window.open('https://pay.kiwify.com.br/M2xDjBQ', '_blank')
+    window.open(targetUrl, '_blank')
   }
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm border-t border-white/10">
