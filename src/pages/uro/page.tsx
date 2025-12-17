@@ -607,7 +607,7 @@ export default function URO() {
       </footer>
 
       {/* WhatsApp Button específico para página URO */}
-      <WhatsAppButtonFoguete phoneNumber="553591021650" message="Quero saber mais" />
+      <WhatsAppButtonFoguete message="Quero saber mais" />
     </div>
   );
 }
