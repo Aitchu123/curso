@@ -8,7 +8,7 @@ interface WhatsAppButtonProps {
 const WhatsAppButtonMatheus: React.FC<WhatsAppButtonProps> = ({ phoneNumber = '5512981094006', message = 'Quero saber mais' }) => {
   const handleWhatsAppClick = () => {
     const whatsappMessage = encodeURIComponent(message);
-    const pool = ['5512982640901', '5521972762708', '5512974046750'];
+    const pool = ['5512982640901', '5521972762708', '5512974046750', '5512982044584', '5512978133810'];
     let idx = 0;
     try {
       const buf = new Uint32Array(1);
