@@ -270,7 +270,7 @@ export default function Instrumentando() {
               >
                 <MagicCard className="p-1 bg-gradient-to-br from-blue-600 to-green-600">
                   <iframe
-                    src="https://drive.google.com/file/d/1nHhNCkKxa0BJ7NBOGZPxRQz__FaWeC6W/preview"
+                    src="https://drive.google.com/file/d/1ZHqAGgT4f9VyHBezq9Z6dG2Cx4aWd4lb/preview"
                     className="w-full h-[500px] lg:h-[600px] rounded-xl"
                     allow="autoplay"
                     title="Apresentação do Curso de Instrumentação Cirúrgica"
