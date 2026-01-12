@@ -182,6 +182,7 @@ export default function Instrumentando() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-green-50 font-['Inter'] overflow-x-hidden">
+      <SalesTopBar />
       {/* Hero Section */}
       <Section 
         background="gradient" 
