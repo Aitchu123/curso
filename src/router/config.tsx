@@ -3,7 +3,7 @@ import type { RouteObject } from "react-router-dom";
 import Instrumentando from "../pages/instrumentando/page";
 import Matheus from "../pages/matheus/page";
 import Home from "../pages/home/page";
-import PTPage from "../pages/pt/page";
+import CapilarPage from "../pages/capilar/page";
 import URO from "../pages/uro/page";
 
 
@@ -21,8 +21,8 @@ const routes: RouteObject[] = [
     element: <Home />,
   },
   {
-    path: "/pt",
-    element: <PTPage />,
+    path: "/capilar",
+    element: <CapilarPage />,
   },
   {
     path: "/uro",

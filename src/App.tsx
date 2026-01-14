@@ -11,7 +11,8 @@ function WhatsAppButtonWrapper() {
   // A página /home tem seu próprio botão
   // A página /black tem seu próprio botão
   // A página /uro tem seu próprio botão
-  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro') {
+  // A página /capilar não deve ter botão
+  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro' || location.pathname === '/capilar') {
     return null;
   }
   
@@ -20,12 +21,33 @@ function WhatsAppButtonWrapper() {
 
 function FixedEnrollmentFooter() {
   const location = useLocation();
+  const isCapilar = location.pathname === '/capilar';
+  
+  // Footer exclusivo para a página Capilar
+  if (isCapilar) {
+    return (
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm border-t border-white/10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <span className="text-white text-sm sm:text-base">
+            <span className="font-extrabold text-green-400">Matricule-se agora</span> e comece já • Certificado de <span className="font-bold">50h</span> <span className="font-extrabold text-green-400">VÁLIDO</span> em todo o Brasil
+          </span>
+          <RainbowButton onClick={() => window.open('https://pay.kiwify.com.br/9TgUYok', '_blank')} className="px-6 py-2 text-sm sm:text-base font-semibold">
+            FAZER MATRÍCULA AGORA
+          </RainbowButton>
+        </div>
+      </div>
+    );
+  }
+
+  // Footer padrão para as outras páginas
   const targetUrl = location.pathname === '/uro'
     ? 'https://pay.kiwify.com.br/USckAFA'
     : 'https://pay.kiwify.com.br/M2xDjBQ';
+      
   const handleClick = () => {
     window.open(targetUrl, '_blank')
   }
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm border-t border-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
