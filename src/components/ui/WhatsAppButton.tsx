@@ -3,7 +3,7 @@ import React from 'react';
 const WhatsAppButton: React.FC = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent('Quero saber mais');
-    const pool = ['5521972762708', '5512978133810', '5512997982655', '5512991301003'];
+    const pool = ['5521972762708', '5512978133810', '5512997982655', '5512991301003', '5512981587893'];
     let idx = 0;
     try {
       const buf = new Uint32Array(1);
