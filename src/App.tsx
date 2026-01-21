@@ -16,6 +16,10 @@ function WhatsAppButtonWrapper() {
     return null;
   }
   
+  if (location.pathname === '/hot') {
+    return <WhatsAppButton forceNumber="5512997982655" />;
+  }
+
   return <WhatsAppButton />;
 }
 

@@ -1,18 +1,34 @@
 import React from 'react';
 
-const WhatsAppButton: React.FC = () => {
+interface WhatsAppButtonProps {
+  forceNumber?: string;
+}
+
+const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ forceNumber }) => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent('Quero saber mais');
-    const pool = ['5521972762708', '5512978133810', '5512997982655', '5512991301003', '5512981587893'];
-    let idx = 0;
-    try {
-      const buf = new Uint32Array(1);
-      window.crypto.getRandomValues(buf);
-      idx = buf[0] % pool.length;
-    } catch {
-      idx = Math.floor(Math.random() * pool.length);
+    
+    // Se um número for forçado, usa ele.
+    // Caso contrário, usa o pool padrão (excluindo o número exclusivo da página hot se desejado, 
+    // mas mantendo a lógica de "outros 4" se o 5512997982655 era um deles)
+    // O usuário pediu "os outros 4 números aleatórios" nas outras páginas.
+    // O número 5512997982655 estava no pool original. Vamos removê-lo do pool padrão.
+    
+    let targetNumber = forceNumber;
+
+    if (!targetNumber) {
+      const pool = ['5521972762708', '5512978133810', '5512991301003', '5512981587893'];
+      let idx = 0;
+      try {
+        const buf = new Uint32Array(1);
+        window.crypto.getRandomValues(buf);
+        idx = buf[0] % pool.length;
+      } catch {
+        idx = Math.floor(Math.random() * pool.length);
+      }
+      targetNumber = pool[idx];
     }
-    const targetNumber = pool[idx];
+
     window.open(`http://wa.me/${targetNumber}?text=${message}`, '_blank');
   };
 
