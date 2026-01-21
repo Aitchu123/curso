@@ -5,6 +5,7 @@ import Matheus from "../pages/matheus/page";
 import Home from "../pages/home/page";
 import CapilarPage from "../pages/capilar/page";
 import URO from "../pages/uro/page";
+import HotPage from "../pages/hot/page";
 
 
 const routes: RouteObject[] = [
@@ -27,6 +28,10 @@ const routes: RouteObject[] = [
   {
     path: "/uro",
     element: <URO />,
+  },
+  {
+    path: "/hot",
+    element: <HotPage />,
   },
 ];
 

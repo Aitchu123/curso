@@ -40,9 +40,13 @@ function FixedEnrollmentFooter() {
   }
 
   // Footer padrão para as outras páginas
-  const targetUrl = location.pathname === '/uro'
-    ? 'https://pay.kiwify.com.br/USckAFA'
-    : 'https://pay.kiwify.com.br/M2xDjBQ';
+  let targetUrl = 'https://pay.kiwify.com.br/M2xDjBQ';
+  
+  if (location.pathname === '/uro') {
+    targetUrl = 'https://pay.kiwify.com.br/USckAFA';
+  } else if (location.pathname === '/hot') {
+    targetUrl = 'https://go.hotmart.com/V103802111P';
+  }
       
   const handleClick = () => {
     window.open(targetUrl, '_blank')
