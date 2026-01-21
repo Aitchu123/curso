@@ -49,7 +49,7 @@ function FixedEnrollmentFooter() {
   if (location.pathname === '/uro') {
     targetUrl = 'https://pay.kiwify.com.br/USckAFA';
   } else if (location.pathname === '/hot') {
-    targetUrl = 'https://go.hotmart.com/V103802111P';
+    targetUrl = 'https://pay.hotmart.com/V103802111P';
   }
       
   const handleClick = () => {
