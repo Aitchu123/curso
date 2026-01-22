@@ -23,7 +23,7 @@ import { AuroraText } from '../../components/magicui/aurora-text';
 export default function CapilarPage() {
   
   const handlePayment = () => {
-    window.open('https://pay.kiwify.com.br/9TgUYok', '_blank');
+    window.open('https://pay.hotmart.com/V103802111P?checkoutMode=10', '_blank');
   };
 
   return (
@@ -56,8 +56,8 @@ export default function CapilarPage() {
             <FadeIn delay={0.4}>
               <div className="flex flex-col items-center gap-4 my-8">
                 <div className="flex items-center gap-3 text-2xl md:text-3xl font-bold">
-                  <span className="text-neutral-500 line-through text-lg decoration-red-500">R$ 249,90</span>
-                  <span className="text-green-400">R$ 127,00</span>
+                  <span className="text-neutral-500 line-through text-lg decoration-red-500">R$ 377,00</span>
+                  <span className="text-green-400">R$ 207,00</span>
                 </div>
                 <RainbowButton 
                   onClick={handlePayment}

@@ -35,7 +35,7 @@ function FixedEnrollmentFooter() {
           <span className="text-white text-sm sm:text-base">
             <span className="font-extrabold text-green-400">Matricule-se agora</span> e comece já • Certificado de <span className="font-bold">50h</span> <span className="font-extrabold text-green-400">VÁLIDO</span> em todo o Brasil
           </span>
-          <RainbowButton onClick={() => window.open('https://pay.kiwify.com.br/9TgUYok', '_blank')} className="px-6 py-2 text-sm sm:text-base font-semibold">
+          <RainbowButton onClick={() => window.open('https://pay.hotmart.com/V103802111P?checkoutMode=10', '_blank')} className="px-6 py-2 text-sm sm:text-base font-semibold">
             FAZER MATRÍCULA AGORA
           </RainbowButton>
         </div>
@@ -43,14 +43,8 @@ function FixedEnrollmentFooter() {
     );
   }
 
-  // Footer padrão para as outras páginas
-  let targetUrl = 'https://pay.kiwify.com.br/M2xDjBQ';
-  
-  if (location.pathname === '/uro') {
-    targetUrl = 'https://pay.kiwify.com.br/USckAFA';
-  } else if (location.pathname === '/hot') {
-    targetUrl = 'https://pay.hotmart.com/V103802111P?checkoutMode=10';
-  }
+  // Lógica para definir o link de destino com base na rota atual
+  let targetUrl = 'https://pay.hotmart.com/V103802111P?checkoutMode=10';
       
   const handleClick = () => {
     window.open(targetUrl, '_blank')

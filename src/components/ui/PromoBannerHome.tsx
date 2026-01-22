@@ -13,11 +13,11 @@ export default function PromoBannerHome({ onBuy }: PromoBannerHomeProps) {
           <div className="space-y-2">
             <Badge variant="secondary" className="bg-green-600 text-white border-green-500">PROMOÇÃO</Badge>
             <div className="flex items-end gap-3">
-              <span className="text-3xl lg:text-4xl font-extrabold tracking-tight">de <span className="line-through decoration-red-500 decoration-2">R$697,00</span> para R$187,00</span>
+              <span className="text-3xl lg:text-4xl font-extrabold tracking-tight">de <span className="line-through decoration-red-500 decoration-2">R$377,00</span> para R$207,00</span>
               <span className="text-sm lg:text-base text-blue-100">à vista no Pix ou Boleto</span>
             </div>
             <div className="text-sm lg:text-base text-blue-100">
-              ou em até <span className="font-semibold text-white">12x de R$ 19,00</span> no cartão de crédito
+              ou em até <span className="font-semibold text-white">12x de R$ 20,90</span> no cartão de crédito
             </div>
           </div>
 

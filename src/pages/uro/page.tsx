@@ -74,7 +74,7 @@ export default function URO() {
       });
     }
     
-    window.open('https://pay.kiwify.com.br/USckAFA', '_blank');
+    window.open('https://pay.hotmart.com/V103802111P?checkoutMode=10', '_blank');
   };
 
   useEffect(() => {
@@ -245,9 +245,9 @@ export default function URO() {
                   <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-6 py-4 rounded-2xl border-2 border-red-400">
                     <div className="text-center">
                       <div className="text-sm mb-1">PREÇO ESPECIAL</div>
-                      <div className="text-lg line-through opacity-70">R$ 677,00</div>
-                      <div className="text-3xl font-bold">R$ 227,00</div>
-                      <div className="text-sm">ou 12x de R$ 22,90</div>
+                      <div className="text-lg line-through opacity-70">R$ 377,00</div>
+                      <div className="text-3xl font-bold">R$ 207,00</div>
+                      <div className="text-sm">ou 12x de R$ 20,90</div>
                     </div>
                   </div>
                   <RainbowButton
@@ -284,10 +284,10 @@ export default function URO() {
                       </div>
                       <h3 className="text-2xl font-bold text-white mb-2">INVESTIMENTO</h3>
                       <div className="mb-2">
-                        <span className="text-xl text-gray-400 line-through text-red-500" style={{ textDecoration: 'line-through', textDecorationColor: '#ef4444' }}>R$ 677,00</span>
+                        <span className="text-xl text-gray-400 line-through text-red-500" style={{ textDecoration: 'line-through', textDecorationColor: '#ef4444' }}>R$ 377,00</span>
                       </div>
-                      <div className="text-5xl font-bold text-green-400 mb-2">R$ 227,00</div>
-                      <div className="text-lg text-blue-300 mb-4">ou 12x de R$ 22,90</div>
+                      <div className="text-5xl font-bold text-green-400 mb-2">R$ 207,00</div>
+                      <div className="text-lg text-blue-300 mb-4">ou 12x de R$ 20,90</div>
                       <RainbowButton
                         onClick={handlePayment}
                         className="w-full text-lg font-bold"

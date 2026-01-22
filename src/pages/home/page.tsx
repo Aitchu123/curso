@@ -76,7 +76,7 @@ export default function Instrumentando() {
       });
     }
     
-    window.open('https://pay.kiwify.com.br/M2xDjBQ?afid=ZmLf9Mes', '_blank');
+    window.open('https://pay.hotmart.com/V103802111P?checkoutMode=10', '_blank');
   };
 
 
