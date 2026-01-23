@@ -12,7 +12,8 @@ function WhatsAppButtonWrapper() {
   // A página /black tem seu próprio botão
   // A página /uro tem seu próprio botão
   // A página /capilar não deve ter botão
-  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro' || location.pathname === '/capilar') {
+  // A página /grade não deve ter botão
+  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro' || location.pathname === '/capilar' || location.pathname === '/grade') {
     return null;
   }
   
@@ -26,6 +27,11 @@ function WhatsAppButtonWrapper() {
 function FixedEnrollmentFooter() {
   const location = useLocation();
   const isCapilar = location.pathname === '/capilar';
+  
+  // Não mostrar footer na página de grade
+  if (location.pathname === '/grade') {
+    return null;
+  }
   
   // Footer exclusivo para a página Capilar
   if (isCapilar) {

@@ -33,6 +33,10 @@ const routes: RouteObject[] = [
     path: "/hot",
     element: <HotPage />,
   },
+  {
+    path: "/grade",
+    element: <GradePage />,
+  },
 ];
 
 export default routes;
