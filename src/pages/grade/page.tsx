@@ -24,7 +24,7 @@ export default function GradePage() {
                     <CheckCircle2 className="w-8 h-8 text-green-400" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-white mb-1">
-                    Instituição Urolaser
+                    Urolaser
                   </CardTitle>
                   <p className="text-sm text-neutral-400">
                     CNPJ: 36.556.201/0001-17
