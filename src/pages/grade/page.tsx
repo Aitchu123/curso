@@ -61,9 +61,6 @@ export default function GradePage() {
                       <FileText className="mr-2 h-5 w-5" />
                       Visualizar Grade Curricular
                     </Button>
-                    <p className="text-xs text-center text-neutral-500 mt-4">
-                      Documento hospedado no Google Drive
-                    </p>
                   </div>
                 </CardContent>
               </Card>
