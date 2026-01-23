@@ -6,6 +6,7 @@ import Home from "../pages/home/page";
 import CapilarPage from "../pages/capilar/page";
 import URO from "../pages/uro/page";
 import HotPage from "../pages/hot/page";
+import GradePage from "../pages/grade/page";
 
 
 const routes: RouteObject[] = [
