@@ -104,7 +104,7 @@ export default function StatesPage() {
       "instructor": {
         "@type": "Person",
         "name": "Instrumentandoo",
-        "description": "Brazil's biggest surgical instrumentation influencer",
+        "description": "United States' biggest surgical instrumentation influencer",
         "sameAs": "https://instagram.com/instrumentandoo"
       },
       "educationalLevel": "Professional",
@@ -239,7 +239,7 @@ export default function StatesPage() {
                   <p className="text-white text-center text-lg leading-relaxed">
                     With our <span className="font-bold text-green-300">CERTIFICATE</span> it is possible to acquire the{" "}
                     <span className="font-bold text-blue-300">"ANIC Card"</span> - the Surgical Instrumentalist Card 
-                    from the <span className="font-semibold">National Registry of Surgical Instrumentalists</span> (Brazil)
+                    from the <span className="font-semibold">National Registry of Surgical Instrumentalists</span> (United States)
                   </p>
                   <div className="flex justify-center mt-4">
                     <div className="flex items-center bg-white/10 px-4 py-2 rounded-full">
@@ -346,7 +346,7 @@ export default function StatesPage() {
                 
                 <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-800">@Instrumentandoo</h3>
                 <p className="text-xl text-blue-600 font-semibold mb-8">
-                  BIGGEST Surgical Instrumentation Influencer in Brazil
+                  BIGGEST Surgical Instrumentation Influencer in United States
                 </p>
                 
                 {/* Instagram Stats */}
@@ -542,7 +542,7 @@ export default function StatesPage() {
                 Don't Miss This Opportunity!
               </h2>
               <p className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Become an expert in surgical instrumentation with Brazil's top influencer. 
+                Become an expert in surgical instrumentation with United States' top influencer. 
                 320 certified hours in 4 specialties!
               </p>
               
