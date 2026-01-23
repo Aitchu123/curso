@@ -1,11 +1,17 @@
 import { BrowserRouter, useLocation } from 'react-router-dom'
 import { AppRoutes } from './router'
 import WhatsAppButton from './components/ui/WhatsAppButton'
+import InstagramButton from './components/ui/InstagramButton'
 import { RainbowButton } from './components/magicui/rainbow-button'
 
 function WhatsAppButtonWrapper() {
   const location = useLocation();
   
+  // Se estiver na página /states, mostra o botão do Instagram
+  if (location.pathname === '/states') {
+    return <InstagramButton />;
+  }
+
   // Só mostra o botão WhatsApp original na página principal (/)
   // A página /matheus tem seu próprio botão
   // A página /home tem seu próprio botão
@@ -13,7 +19,7 @@ function WhatsAppButtonWrapper() {
   // A página /uro tem seu próprio botão
   // A página /capilar não deve ter botão
   // A página /grade não deve ter botão
-  // A página /states não deve ter botão
+  // A página /states não deve ter botão (mas tem o Instagram acima)
   if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro' || location.pathname === '/capilar' || location.pathname === '/grade' || location.pathname === '/states') {
     return null;
   }
