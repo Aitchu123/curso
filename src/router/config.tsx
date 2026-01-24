@@ -7,6 +7,7 @@ import CapilarPage from "../pages/capilar/page";
 import URO from "../pages/uro/page";
 import HotPage from "../pages/hot/page";
 import GradePage from "../pages/grade/page";
+import ValidadePage from "../pages/validade/page";
 import StatesPage from "../pages/states/page";
 
 
@@ -38,6 +39,10 @@ const routes: RouteObject[] = [
   {
     path: "/grade",
     element: <GradePage />,
+  },
+  {
+    path: "/validade",
+    element: <ValidadePage />,
   },
   {
     path: "/states",
