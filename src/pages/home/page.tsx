@@ -241,7 +241,7 @@ export default function Instrumentando() {
                   <p className="text-white text-center text-lg leading-relaxed">
                     Com nosso <span className="font-bold text-green-300">CERTIFICADO</span> é possível adquirir a{" "}
                     <span className="font-bold text-blue-300">"Carteirinha da ANIC"</span> - a Carteira de Instrumentador Cirúrgico 
-                    do <span className="font-semibold">Cadastro Nacional de Instrumentadores Cirúrgicos</span>
+                    do <span className="font-semibold">Agência Nacional de Instrumentadores Cirúrgicos</span>
                   </p>
                   <div className="flex justify-center mt-4">
                     <div className="flex items-center bg-white/10 px-4 py-2 rounded-full">
