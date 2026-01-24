@@ -295,11 +295,12 @@ export default function StatesPage() {
 
             <Card className="bg-white shadow-xl overflow-hidden">
               <CardContent className="p-0">
-                <img
-                  src="/historico-escolar-v2.jpg"
-                  alt="Academic Transcript: school grade and certificate back"
-                  className="w-full h-auto"
-                />
+                <iframe
+                  src="https://drive.google.com/file/d/1lfJySrag8JRi4_vwW__KmO1gyUkFdZbQ/preview"
+                  className="w-full h-[600px] md:h-[800px]"
+                  title="Academic Transcript"
+                  allow="autoplay"
+                ></iframe>
 
                 <div className="p-6">
                   <p className="text-gray-700 text-lg">
