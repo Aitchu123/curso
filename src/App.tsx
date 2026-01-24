@@ -49,7 +49,7 @@ function FixedEnrollmentFooter() {
           <span className="text-white text-sm sm:text-base">
             <span className="font-extrabold text-green-400">Enroll now</span> and start immediately • <span className="font-bold">320h</span> Certificate <span className="font-extrabold text-green-400">VALID</span> internationally
           </span>
-          <RainbowButton onClick={() => window.open('https://pay.hotmart.com/V103802111P?checkoutMode=10', '_blank')} className="px-6 py-2 text-sm sm:text-base font-semibold">
+          <RainbowButton onClick={() => window.open('https://pay.hotmart.com/G104048713M', '_blank')} className="px-6 py-2 text-sm sm:text-base font-semibold">
             ENROLL NOW
           </RainbowButton>
         </div>

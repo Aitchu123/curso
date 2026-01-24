@@ -75,7 +75,7 @@ export default function StatesPage() {
       });
     }
     
-    window.open('https://pay.hotmart.com/V103802111P?checkoutMode=10', '_blank');
+    window.open('https://pay.hotmart.com/G104048713M', '_blank');
   };
 
 
