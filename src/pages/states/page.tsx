@@ -238,7 +238,7 @@ export default function StatesPage() {
                   </div>
                   <p className="text-white text-center text-lg leading-relaxed">
                     With our <span className="font-bold text-green-300">CERTIFICATE</span> it is possible to acquire the{" "}
-                    <span className="font-bold text-blue-300">"ANIC Card"</span> - the Surgical Instrumentalist Card 
+                    <span className="font-bold text-blue-300">"ANCI Card"</span> - the Surgical Instrumentalist Card 
                     from the <span className="font-semibold">National Registry of Surgical Instrumentalists</span> (United States)
                   </p>
                   <div className="flex justify-center mt-4">
