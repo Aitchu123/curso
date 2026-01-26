@@ -246,7 +246,7 @@ export default function URO() {
                     <div className="text-center">
                       <div className="text-sm mb-1">PREÇO ESPECIAL</div>
                       <div className="text-lg line-through opacity-70">R$ 377,00</div>
-                      <div className="text-3xl font-bold">R$ 207,00</div>
+                      <div className="text-3xl font-bold">R$ 247,00</div>
                       <div className="text-sm">ou 12x de R$ 20,90</div>
                     </div>
                   </div>
@@ -286,7 +286,7 @@ export default function URO() {
                       <div className="mb-2">
                         <span className="text-xl text-gray-400 line-through text-red-500" style={{ textDecoration: 'line-through', textDecorationColor: '#ef4444' }}>R$ 377,00</span>
                       </div>
-                      <div className="text-5xl font-bold text-green-400 mb-2">R$ 207,00</div>
+                      <div className="text-5xl font-bold text-green-400 mb-2">R$ 247,00</div>
                       <div className="text-lg text-blue-300 mb-4">ou 12x de R$ 20,90</div>
                       <RainbowButton
                         onClick={handlePayment}

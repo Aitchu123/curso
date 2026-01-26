@@ -57,7 +57,7 @@ export default function CapilarPage() {
               <div className="flex flex-col items-center gap-4 my-8">
                 <div className="flex items-center gap-3 text-2xl md:text-3xl font-bold">
                   <span className="text-neutral-500 line-through text-lg decoration-red-500">R$ 377,00</span>
-                  <span className="text-green-400">R$ 207,00</span>
+                  <span className="text-green-400">R$ 247,00</span>
                 </div>
                 <RainbowButton 
                   onClick={handlePayment}
