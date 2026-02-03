@@ -20,8 +20,9 @@ function WhatsAppButtonWrapper() {
   // A página /capilar não deve ter botão
   // A página /grade não deve ter botão
   // A página /validade não deve ter botão
+  // A página /aprovado não deve ter botão
   // A página /states não deve ter botão (mas tem o Instagram acima)
-  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro' || location.pathname === '/capilar' || location.pathname === '/grade' || location.pathname === '/validade' || location.pathname === '/states') {
+  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro' || location.pathname === '/capilar' || location.pathname === '/grade' || location.pathname === '/validade' || location.pathname === '/aprovado' || location.pathname === '/states') {
     return null;
   }
   
@@ -37,8 +38,8 @@ function FixedEnrollmentFooter() {
   const isCapilar = location.pathname === '/capilar';
   const isStates = location.pathname === '/states';
   
-  // Não mostrar footer na página de grade ou validade
-  if (location.pathname === '/grade' || location.pathname === '/validade') {
+  // Não mostrar footer na página de grade ou validade ou aprovado
+  if (location.pathname === '/grade' || location.pathname === '/validade' || location.pathname === '/aprovado') {
     return null;
   }
   

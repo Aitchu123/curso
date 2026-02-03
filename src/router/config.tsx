@@ -8,6 +8,7 @@ import URO from "../pages/uro/page";
 import HotPage from "../pages/hot/page";
 import GradePage from "../pages/grade/page";
 import ValidadePage from "../pages/validade/page";
+import AprovadoPage from "../pages/aprovado/page";
 import StatesPage from "../pages/states/page";
 
 
@@ -43,6 +44,10 @@ const routes: RouteObject[] = [
   {
     path: "/validade",
     element: <ValidadePage />,
+  },
+  {
+    path: "/aprovado",
+    element: <AprovadoPage />,
   },
   {
     path: "/states",
