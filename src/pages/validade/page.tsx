@@ -9,7 +9,7 @@ import { FadeIn } from '../../components/animated/fade-in';
 
 export default function ValidadePage() {
   const handleOpenDrive = () => {
-    window.open('https://drive.google.com/file/d/1FkrR8RmbUh5Hz37W_AC4N2CW6trMhsjw/view?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/file/d/1oG_eOtZ0tQYtxyZa-Fhr5iNnvOppwDaq/view?usp=drive_link', '_blank');
   };
 
   return (
