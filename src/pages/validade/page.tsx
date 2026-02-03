@@ -1,17 +1,11 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Badge } from '../../components/ui/badge';
-import { Button } from '../../components/ui/button';
-import { FileText, CheckCircle2 } from 'lucide-react';
+import { XCircle } from 'lucide-react';
 import { Section } from '../../components/layout/Section';
 import { Container } from '../../components/layout/Container';
 import { FadeIn } from '../../components/animated/fade-in';
 
 export default function ValidadePage() {
-  const handleOpenDrive = () => {
-    window.open('https://drive.google.com/file/d/1oG_eOtZ0tQYtxyZa-Fhr5iNnvOppwDaq/view?usp=drive_link', '_blank');
-  };
-
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-50 font-['Inter'] flex items-center justify-center">
       <Section className="py-12">
@@ -20,8 +14,8 @@ export default function ValidadePage() {
             <div className="max-w-md mx-auto">
               <Card className="bg-white/10 border-white/20 backdrop-blur-sm shadow-xl overflow-hidden">
                 <CardHeader className="text-center pb-2">
-                  <div className="mx-auto bg-green-500/20 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
-                    <CheckCircle2 className="w-8 h-8 text-green-400" />
+                  <div className="mx-auto bg-red-500/20 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                    <XCircle className="w-8 h-8 text-red-500" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-neutral-400 mb-1">
                     Instituição Urolaser
@@ -42,25 +36,21 @@ export default function ValidadePage() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-neutral-900/50 p-4 rounded-lg border border-white/5">
                         <p className="text-sm text-neutral-400 mb-1">Status</p>
-                        <Badge variant="secondary" className="bg-green-500/20 text-green-300 border-green-500/30">
-                          Válido
+                        <Badge variant="secondary" className="bg-red-500/20 text-red-300 border-red-500/30">
+                          Inválido
                         </Badge>
                       </div>
                       <div className="bg-neutral-900/50 p-4 rounded-lg border border-white/5">
                         <p className="text-sm text-neutral-400 mb-1">Carga Horária</p>
-                        <p className="font-semibold text-white">320 horas</p>
+                        <p className="font-semibold text-white">0 horas</p>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="pt-2">
-                    <Button 
-                      onClick={handleOpenDrive}
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 text-lg shadow-lg shadow-blue-900/20"
-                    >
-                      <FileText className="mr-2 h-5 w-5" />
-                      Visualizar Grade Curricular
-                    </Button>
+                    <div className="bg-red-900/20 p-4 rounded-lg border border-red-500/30 text-center">
+                      <p className="text-red-300 font-semibold">
+                        Aluno desistente, não encerrou o curso
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
