@@ -110,7 +110,7 @@ export default function StatesPage() {
       "educationalLevel": "Professional",
       "courseMode": "Online",
       "timeRequired": "P1M",
-      "totalTime": "PT320H",
+      "totalTime": "PT360H",
       "coursePrerequisites": "Basic knowledge in health area",
       "teaches": [
         "Urology Instrumentation",
@@ -123,7 +123,7 @@ export default function StatesPage() {
       "offers": {
         "@type": "Offer",
         "name": "Surgical Instrumentation Course",
-        "description": "Complete course with 320 certified hours in 4 specialties",
+        "description": "Complete course with 360 certified hours in 4 specialties",
         "availability": "https://schema.org/InStock",
         "validFrom": "2025-01-01",
         "priceValidUntil": "2025-12-31"
@@ -303,10 +303,10 @@ export default function StatesPage() {
                 ></iframe>
 
                 <div className="p-6">
-                  <p className="text-gray-700 text-lg">
-                    This image shows the course curriculum and the back of the student's certificate — the Academic
-                    Transcript. You will find basic, advanced, and practical contents, as well as video modules in
-                    Urology, Gynecology, and Plastic Surgery. It is the proof of a complete program, with <span className="font-semibold">320 certified hours</span>
+                  <p className="text-gray-700 text-lg text-center lg:text-center">
+                    This image shows the course curriculum and the back of the student certificate — the Academic Transcript.
+                    You will find basic, advanced, and practical contents, as well as video modules in Urology, Gynecology,
+                    and Plastic Surgery. It is the proof of a complete program, with <span className="font-semibold">360 certified hours</span>
                     and recognized training.
                   </p>
                   <p className="text-gray-700 text-lg mt-4">
@@ -544,13 +544,13 @@ export default function StatesPage() {
               </h2>
               <p className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Become an expert in surgical instrumentation with United States' top influencer. 
-                320 certified hours in 4 specialties!
+                360 certified hours in 4 specialties!
               </p>
               
               <div className="flex flex-wrap gap-6 justify-center items-center mb-12">
                 {[
                   { icon: <Clock className="w-6 h-6" />, text: "1 Month Duration" },
-                  { icon: <Award className="w-6 h-6" />, text: "320 Certified Hours" },
+                  { icon: <Award className="w-6 h-6" />, text: "360 Certified Hours" },
                   { icon: <Star className="w-6 h-6" />, text: "4 Specialties" }
                 ].map((item, index) => (
                   <FadeIn key={index} delay={index * 0.1}>

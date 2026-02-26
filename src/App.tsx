@@ -49,7 +49,7 @@ function FixedEnrollmentFooter() {
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm border-t border-white/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
           <span className="text-white text-sm sm:text-base">
-            <span className="font-extrabold text-green-400">Enroll now</span> and start immediately • <span className="font-bold">320h</span> Certificate <span className="font-extrabold text-green-400">VALID</span> internationally
+            <span className="font-extrabold text-green-400">Enroll now</span> and start immediately • <span className="font-bold">360h</span> Certificate <span className="font-extrabold text-green-400">VALID</span> internationally
           </span>
           <RainbowButton onClick={() => window.open('https://pay.hotmart.com/G104048713M', '_blank')} className="px-6 py-2 text-sm sm:text-base font-semibold">
             ENROLL NOW
@@ -86,7 +86,7 @@ function FixedEnrollmentFooter() {
     <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm border-t border-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-3">
         <span className="text-white text-sm sm:text-base">
-          <span className="font-extrabold text-green-400">Matricule-se agora</span> e comece já • Certificado de <span className="font-bold">320h</span> <span className="font-extrabold text-green-400">VÁLIDO</span> em todo o Brasil
+          <span className="font-extrabold text-green-400">Matricule-se agora</span> e comece já • Certificado de <span className="font-bold">360h</span> <span className="font-extrabold text-green-400">VÁLIDO</span> em todo o Brasil
         </span>
         <RainbowButton onClick={handleClick} className="px-6 py-2 text-sm sm:text-base font-semibold">
           FAZER MATRÍCULA AGORA

@@ -119,8 +119,8 @@ export default function URO() {
       ],
       "offers": {
         "@type": "Offer",
-        "name": "Curso de Instrumentação Cirúrgica - URO",
-        "description": "Curso completo com 320 horas certificadas em 4 especialidades",
+        "name": "Curso de Instrumentação Cirúrgica",
+        "description": "Curso completo com 360 horas certificadas em 4 especialidades",
         "availability": "https://schema.org/InStock",
         "validFrom": "2025-01-01",
         "priceValidUntil": "2025-12-31"
@@ -220,7 +220,7 @@ export default function URO() {
                 </h1>
                 
                 <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
-                  320 horas certificadas • 4 especialidades • Professor @Instrumentandoo
+                  360 horas certificadas • 4 especialidades • Professor @Instrumentandoo
                 </p>
 
                 <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 rounded-2xl p-6 max-w-2xl">
@@ -520,7 +520,7 @@ export default function URO() {
                   <p className="text-gray-700 text-lg text-center lg:text-center">
                     Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno — o Histórico
                     Escolar. Você encontra os conteúdos básicos, avançados e práticos, além de módulos por vídeo em
-                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">320 horas certificadas</span>
+                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">360 horas certificadas</span>
                     e formação reconhecida.
                   </p>
                   <p className="text-gray-700 text-lg mt-4 text-center lg:text-center">
@@ -559,14 +559,14 @@ export default function URO() {
                 ÚLTIMAS VAGAS!
               </h2>
               <p className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Não perca esta oportunidade única! 
-                320 horas certificadas em 4 especialidades!
+                Torne-se um especialista em instrumentação cirúrgica com o maior influenciador do Brasil. 
+                360 horas certificadas em 4 especialidades!
               </p>
               
               <div className="flex flex-wrap gap-6 justify-center items-center mb-12">
                 {[
                   { icon: <Clock className="w-6 h-6" />, text: "1 Mês de Duração" },
-                  { icon: <Award className="w-6 h-6" />, text: "320 Horas Certificadas" },
+                  { icon: <Award className="w-6 h-6" />, text: "360 Horas Certificadas" },
                   { icon: <Star className="w-6 h-6" />, text: "4 Especialidades" }
                 ].map((item, index) => (
                   <FadeIn key={index} delay={index * 0.1}>
