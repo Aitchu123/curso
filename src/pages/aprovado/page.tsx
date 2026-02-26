@@ -47,7 +47,7 @@ export default function AprovadoPage() {
                       </div>
                       <div className="bg-neutral-900/50 p-4 rounded-lg border border-white/5">
                         <p className="text-sm text-neutral-400 mb-1">Carga Horária</p>
-                        <p className="font-semibold text-white">320 horas</p>
+                        <p className="font-semibold text-white">360 horas</p>
                       </div>
                     </div>
                   </div>
