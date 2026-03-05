@@ -73,6 +73,10 @@ function FixedEnrollmentFooter() {
 
   // Lógica para definir o link de destino com base na rota atual
   let targetUrl = 'https://pay.hotmart.com/V103802111P?checkoutMode=10';
+  
+  if (location.pathname === '/hot') {
+    targetUrl = 'https://go.hotmart.com/H104403947W?dp=1';
+  }
       
   const handleClick = () => {
     window.open(targetUrl, '_blank')
