@@ -22,12 +22,8 @@ function WhatsAppButtonWrapper() {
   // A página /validade não deve ter botão
   // A página /aprovado não deve ter botão
   // A página /states não deve ter botão (mas tem o Instagram acima)
-  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro' || location.pathname === '/capilar' || location.pathname === '/grade' || location.pathname === '/validade' || location.pathname === '/aprovado' || location.pathname === '/states') {
+  if (location.pathname === '/matheus' || location.pathname === '/home' || location.pathname === '/uro' || location.pathname === '/capilar' || location.pathname === '/grade' || location.pathname === '/validade' || location.pathname === '/aprovado' || location.pathname === '/states' || location.pathname === '/hot') {
     return null;
-  }
-  
-  if (location.pathname === '/hot') {
-    return <WhatsAppButton forceNumber="5512997982655" />;
   }
 
   return <WhatsAppButton />;

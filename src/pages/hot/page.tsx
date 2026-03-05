@@ -123,7 +123,7 @@ export default function HotPage() {
       "offers": {
         "@type": "Offer",
         "name": "Curso de Instrumentação Cirúrgica",
-        "description": "Curso completo com 320 horas certificadas em 4 especialidades",
+        "description": "Curso completo com 360 horas certificadas em 4 especialidades",
         "availability": "https://schema.org/InStock",
         "validFrom": "2025-01-01",
         "priceValidUntil": "2025-12-31"
