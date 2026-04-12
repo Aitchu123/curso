@@ -57,7 +57,7 @@ export default function CapilarPage() {
               <div className="flex flex-col items-center gap-4 my-8">
                 <div className="flex items-center gap-3 text-2xl md:text-3xl font-bold">
                   <span className="text-neutral-500 line-through text-lg decoration-red-500">R$ 377,00</span>
-                  <span className="text-green-400">R$ 197,00</span>
+                  <span className="text-green-400">R$ 247,00</span>
                 </div>
                 <RainbowButton 
                   onClick={handlePayment}
@@ -66,7 +66,7 @@ export default function CapilarPage() {
                   FAZER MATRÍCULA AGORA
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </RainbowButton>
-                <p className="text-sm text-neutral-500">Acesso imediato • Certificado incluso</p>
+                <p className="text-sm text-neutral-500">ou 12x de R$ 24,00</p>
               </div>
             </FadeIn>
           </div>
@@ -180,7 +180,7 @@ export default function CapilarPage() {
                     </div>
                     <div className="flex justify-between items-center text-lg font-bold text-white">
                       <span>Valor Promocional</span>
-                      <span className="text-green-400">R$ 127,00</span>
+                      <span className="text-green-400">R$ 247,00</span>
                     </div>
                   </div>
                   <div className="h-px bg-neutral-800" />
@@ -198,6 +198,7 @@ export default function CapilarPage() {
                       Material Didático Exclusivo
                     </li>
                   </ul>
+                  <div className="text-center text-xs text-neutral-400 mb-2">ou 12x de R$ 24,00</div>
                   <Button 
                     onClick={handlePayment}
                     className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6"
