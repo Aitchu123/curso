@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -28,6 +29,8 @@ import { RainbowButton } from '../../components/magicui/rainbow-button';
 import { AuroraText } from '../../components/magicui/aurora-text';
 import { MagicCard } from '../../components/magicui/magic-card';
 import WhatsAppButtonFoguete from '../../components/ui/WhatsAppButtonFoguete';
+import PromoBannerHome from '../../components/ui/PromoBannerHome';
+import { SalesTopBar } from '../../components/ui/SalesTopBar';
 
 export default function URO() {
   const [showModal, setShowModal] = useState(false);
@@ -77,6 +80,8 @@ export default function URO() {
     window.open('https://pay.hotmart.com/V103802111P?checkoutMode=10', '_blank');
   };
 
+
+
   useEffect(() => {
     // Buscar dados do Instagram ao carregar a página
     fetchInstagramData();
@@ -90,8 +95,8 @@ export default function URO() {
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Course",
-      "name": "Curso de Instrumentação Cirúrgica - URO",
-      "description": "Curso completo de instrumentação cirúrgica com 320 horas certificadas. Especialidades em urologia, ginecologia, plástica e cirurgia geral.",
+      "name": "Curso de Instrumentação Cirúrgica - 4 Especialidades",
+      "description": "Curso completo de instrumentação cirúrgica com 360 horas certificadas. Especialidades em urologia, ginecologia, plástica e cirurgia geral. Cirurgias de vídeo e abertas.",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "Escola Urolaser",
@@ -107,7 +112,7 @@ export default function URO() {
       "educationalLevel": "Professional",
       "courseMode": "Online",
       "timeRequired": "P1M",
-      "totalTime": "PT320H",
+      "totalTime": "PT360H",
       "coursePrerequisites": "Conhecimento básico em área da saúde",
       "teaches": [
         "Instrumentação em Urologia",
@@ -169,7 +174,7 @@ export default function URO() {
   ];
 
   const benefits = [
-    { icon: <Shield className="w-6 h-6" />, text: "320 horas certificadas" },
+    { icon: <Shield className="w-6 h-6" />, text: "360 horas certificadas" },
     { icon: <Clock className="w-6 h-6" />, text: "1 mês de duração" },
     { icon: <Users className="w-6 h-6" />, text: "4 especialidades" },
     { icon: <Award className="w-6 h-6" />, text: "Certificado reconhecido" },
@@ -178,6 +183,7 @@ export default function URO() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-green-50 font-['Inter'] overflow-x-hidden">
+      <SalesTopBar />
       {/* Hero Section */}
       <Section 
         background="gradient" 
@@ -188,118 +194,141 @@ export default function URO() {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-green-900/20"></div>
         
         <Container className="relative z-10">
-          <Grid cols={{ default: 1, lg: 2 }} gap="xl" className="items-center">
-            {/* Content */}
-            <FadeIn direction="left" className="text-center lg:text-center">
+          <div className="max-w-6xl mx-auto text-center">
+            <FadeIn direction="up">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="space-y-6"
+                className="space-y-8"
               >
-                <div className="flex flex-wrap gap-2 justify-center lg:justify-center mb-6">
+                <div className="flex flex-wrap gap-3 justify-center mb-4">
                   {benefits.map((benefit, index) => (
-                    <Badge key={index} variant="secondary" className="bg-white/10 text-white border-white/20 backdrop-blur-sm">
+                    <Badge
+                      key={index}
+                      variant="secondary"
+                      className="bg-white/10 text-white border-white/20 backdrop-blur-md px-4 py-2 text-sm"
+                    >
                       {benefit.icon}
                       <span className="ml-2">{benefit.text}</span>
                     </Badge>
                   ))}
                 </div>
 
-                <div className="bg-red-600 text-white px-6 py-3 rounded-full mb-6 inline-block">
-                  <span className="font-bold">⚠️ ÚLTIMO DIA HOJE PARA MATRÍCULA, TURMA ABERTA</span>
-                </div>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                  Curso de{" "}
-                  <AuroraText 
-                    className="text-4xl sm:text-5xl lg:text-6xl font-bold"
-                    colors={["#00ff88", "#00d4ff", "#ff0080", "#ffaa00"]}
-                  >
-                    Instrumentação Cirúrgica
-                  </AuroraText>
-                </h1>
-                
-                <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
-                  360 horas certificadas • 4 especialidades • Professor @Instrumentandoo
-                </p>
+                <div className="space-y-5 max-w-4xl mx-auto">
+                  <Badge className="bg-green-500/20 text-green-300 border border-green-400/30 px-4 py-2 text-sm sm:text-base">
+                    Turma aberta com acesso imediato
+                  </Badge>
 
-                <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 rounded-2xl p-6 max-w-2xl">
-                  <div className="flex items-center justify-center mb-3">
-                    <Award className="w-6 h-6 text-green-400 mr-2" />
-                    <span className="text-green-400 font-bold text-lg">CERTIFICADO RECONHECIDO</span>
+                  <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
+                    Curso de{" "}
+                    <AuroraText
+                      className="text-4xl sm:text-5xl lg:text-7xl font-bold"
+                      colors={["#00ff88", "#00d4ff", "#ff0080", "#ffaa00"]}
+                    >
+                      Instrumentacao Cirurgica
+                    </AuroraText>
+                  </h1>
+
+                  <div className="max-w-4xl mx-auto rounded-3xl border border-amber-300/25 bg-gradient-to-r from-amber-500/15 to-orange-500/15 backdrop-blur-md p-6 sm:p-8 shadow-2xl shadow-amber-950/20">
+                    <div className="flex items-center justify-center gap-2 mb-3">
+                      <CheckCircle2 className="w-5 h-5 text-amber-300" />
+                      <span className="text-amber-200 font-semibold uppercase tracking-wide text-sm">
+                        Beneficio Exclusivo Urolaser
+                      </span>
+                    </div>
+                    <p className="text-white text-lg sm:text-2xl leading-relaxed font-medium">
+                      Alunos da Urolaser tem direito a acompanhar 1 CIRURGIA presencial na sua cidade,
+                      no final do curso. Assim que pegar seu certificado, voce vai passar 3 hospitais da sua cidade.
+                    </p>
                   </div>
-                  <p className="text-white text-center text-lg leading-relaxed">
-                    Com nosso <span className="font-bold text-green-300">CERTIFICADO</span> é possível adquirir a{" "}
-                    <span className="font-bold text-blue-300">"Carteirinha da ANCI"</span> - a Carteira de Instrumentador Cirúrgico 
-                    do <span className="font-semibold">Agência Nacional de Instrumentadores Cirúrgicos</span>
+
+                  <p className="text-lg sm:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    360 horas certificadas, 4 especialidades e formacao completa com o professor
+                    {" "}@Instrumentandoo.
                   </p>
-                  <div className="flex justify-center mt-4">
-                    <div className="flex items-center bg-white/10 px-4 py-2 rounded-full">
-                      <CheckCircle2 className="w-5 h-5 text-green-400 mr-2" />
-                      <span className="text-green-300 font-semibold">Reconhecimento Nacional</span>
-                    </div>
-                  </div>
+
+                  <p className="text-base sm:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+                    Aprenda do basico ao avancado, tenha um certificado reconhecido e se prepare para
+                    atuar com seguranca em centros cirurgicos de alto nivel.
+                  </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-center pt-6">
-                  <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-6 py-4 rounded-2xl border-2 border-red-400">
-                    <div className="text-center">
-                      <div className="text-sm mb-1">PREÇO ESPECIAL</div>
-                      <div className="text-lg line-through opacity-70">R$ 377,00</div>
-                      <div className="text-3xl font-bold">R$ 247,00</div>
-                      <div className="text-sm">ou 12x de R$ 24,00</div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="grid gap-4 md:grid-cols-3 max-w-5xl mx-auto"
+                >
+                  <div className="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md p-5">
+                    <div className="flex items-center justify-center mb-3">
+                      <Award className="w-6 h-6 text-green-400 mr-2" />
+                      <span className="text-green-300 font-semibold">Certificado Reconhecido</span>
                     </div>
+                    <p className="text-white/85 text-sm sm:text-base leading-relaxed">
+                      Com o certificado, o aluno pode solicitar a carteirinha da ANCI e fortalecer sua
+                      atuacao profissional.
+                    </p>
                   </div>
+
+                  <div className="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md p-5">
+                    <div className="flex items-center justify-center mb-3">
+                      <Building2 className="w-6 h-6 text-blue-300 mr-2" />
+                      <span className="text-blue-200 font-semibold">Experiencia Real</span>
+                    </div>
+                    <p className="text-white/85 text-sm sm:text-base leading-relaxed">
+                      Conteudo pensado para quem quer entrar no mercado com mais preparo, confianca e
+                      diferencao.
+                    </p>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md p-5">
+                    <div className="flex items-center justify-center mb-3">
+                      <CheckCircle2 className="w-6 h-6 text-green-400 mr-2" />
+                      <span className="text-green-300 font-semibold">Acesso Imediato</span>
+                    </div>
+                    <p className="text-white/85 text-sm sm:text-base leading-relaxed">
+                      Matricule-se hoje e comece agora mesmo pelo celular, tablet ou computador.
+                    </p>
+                  </div>
+                </motion.div>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
                   <RainbowButton
                     onClick={handlePayment}
-                    className="h-14 px-8 text-lg font-bold self-center"
+                    className="h-14 px-8 text-lg font-bold w-full sm:w-auto"
                   >
                     <Play className="w-5 h-5 mr-2" />
-                    GARANTIR VAGA
+                    INSCREVER-SE AGORA
                   </RainbowButton>
-                </div>
-              </motion.div>
-            </FadeIn>
 
-            {/* Video */}
-            <FadeIn direction="right" delay={0.3} className="flex justify-center">
-              <motion.div
-                className="w-full max-w-sm lg:max-w-md"
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <MagicCard className="p-1 bg-gradient-to-br from-blue-600 to-green-600">
-                  <iframe
-                    src="https://drive.google.com/file/d/1nHhNCkKxa0BJ7NBOGZPxRQz__FaWeC6W/preview"
-                    className="w-full h-[500px] lg:h-[600px] rounded-xl"
-                    allow="autoplay"
-                    title="Apresentação do Curso de Instrumentação Cirúrgica"
-                  ></iframe>
-                </MagicCard>
-                <div className="mt-6">
-                  <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm border border-red-400/30 rounded-2xl p-6">
-                    <div className="text-center">
-                      <div className="bg-red-600 text-white px-4 py-2 rounded-full mb-4 inline-block">
-                        <span className="font-bold text-sm">⚠️ ÚLTIMO DIA HOJE PARA MATRÍCULA, TURMA ABERTA</span>
-                      </div>
-                      <h3 className="text-2xl font-bold text-white mb-2">INVESTIMENTO</h3>
-                      <div className="mb-2">
-                        <span className="text-xl text-gray-400 line-through text-red-500" style={{ textDecoration: 'line-through', textDecorationColor: '#ef4444' }}>R$ 377,00</span>
-                      </div>
-                      <div className="text-5xl font-bold text-green-400 mb-2">R$ 247,00</div>
-                      <div className="text-lg text-blue-300 mb-4">ou 12x de R$ 24,00</div>
-                      <RainbowButton
-                        onClick={handlePayment}
-                        className="w-full text-lg font-bold"
-                      >
-                        GARANTIR VAGA AGORA
-                      </RainbowButton>
-                    </div>
+                  <div className="text-white/85 text-sm sm:text-base rounded-full border border-white/15 bg-white/10 px-5 py-3 backdrop-blur-md">
+                    Acesso imediato • Certificado reconhecido • Conteudo completo
                   </div>
                 </div>
               </motion.div>
             </FadeIn>
-          </Grid>
+
+            <FadeIn direction="up" delay={0.35} className="mt-10">
+              <motion.div
+                className="w-full max-w-4xl mx-auto"
+                whileHover={{ scale: 1.01 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <MagicCard className="p-1 bg-gradient-to-br from-blue-600 to-green-600 shadow-2xl shadow-blue-950/30">
+                  <iframe
+                    src="https://drive.google.com/file/d/1-S9UTWvxoaJF8oGOixGi4OUz0IsFgDaW/preview"
+                    className="w-full h-[360px] sm:h-[480px] lg:h-[620px] rounded-[20px]"
+                    allow="autoplay"
+                    title="Apresentacao do Curso de Instrumentacao Cirurgica"
+                  ></iframe>
+                </MagicCard>
+                <div className="mt-6 max-w-3xl mx-auto">
+                  <PromoBannerHome onBuy={handlePayment} />
+                </div>
+              </motion.div>
+            </FadeIn>
+          </div>
         </Container>
       </Section>
 
@@ -420,8 +449,8 @@ export default function URO() {
               <FadeIn key={index} delay={index * 0.1}>
                 <MagicCard 
                   className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 group"
-                  gradientFrom="#00d4ff"
-                  gradientTo="#00ff88"
+                  gradientFrom="#9E7AFF"
+                  gradientTo="#FE8BBB"
                   gradientColor="#ffffff"
                   gradientOpacity={0.1}
                 >
@@ -502,7 +531,7 @@ export default function URO() {
           </div>
         </div>
       </div>
-
+      {/* Histórico Escolar */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="max-w-5xl mx-auto">
@@ -541,6 +570,8 @@ export default function URO() {
         </div>
       </section>
 
+      
+
       {/* CTA Final Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-green-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -552,11 +583,8 @@ export default function URO() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="bg-red-600 text-white px-6 py-3 rounded-full mb-8 inline-block">
-                <span className="font-bold">⚠️ ÚLTIMO DIA HOJE PARA MATRÍCULA, TURMA ABERTA</span>
-              </div>
               <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-                ÚLTIMAS VAGAS!
+                Não perca esta oportunidade!
               </h2>
               <p className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Torne-se um especialista em instrumentação cirúrgica com o maior influenciador do Brasil. 
@@ -584,7 +612,7 @@ export default function URO() {
                   className="group text-lg px-12 py-6"
                 >
                   <Play className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
-                  GARANTIR MINHA VAGA
+                  INSCREVER-SE AGORA
                 </RainbowButton>                              
               </div>
             </motion.div>
@@ -606,7 +634,51 @@ export default function URO() {
         </div>
       </footer>
 
-      {/* WhatsApp Button específico para página URO */}
+
+
+      {/* Modal de Confirmação */}
+      {showModal && (
+        <motion.div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <motion.div
+            className="bg-white rounded-2xl p-8 max-w-md w-full"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle2 className="text-white w-8 h-8" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">Informações Enviadas!</h3>
+              <p className="text-gray-600 mb-6">
+                Obrigado pelo interesse! Em breve entraremos em contato com mais detalhes sobre o curso.
+              </p>
+              <div className="flex gap-4">
+                <RainbowButton
+                  onClick={handlePayment}
+                  className="flex-1"
+                >
+                  Inscrever-se Agora
+                </RainbowButton>
+                <RainbowButton
+                  onClick={() => setShowModal(false)}
+                  className="flex-1"
+                >
+                  Fechar
+                </RainbowButton>
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+      
+      {/* WhatsApp Button específico para página Home */}
       <WhatsAppButtonFoguete message="Quero saber mais" />
     </div>
   );

@@ -28,7 +28,9 @@ import { Grid } from '../../components/layout/Grid';
 import { RainbowButton } from '../../components/magicui/rainbow-button';
 import { AuroraText } from '../../components/magicui/aurora-text';
 import { MagicCard } from '../../components/magicui/magic-card';
+import WhatsAppButtonFoguete from '../../components/ui/WhatsAppButtonFoguete';
 import PromoBannerHome from '../../components/ui/PromoBannerHome';
+import { SalesTopBar } from '../../components/ui/SalesTopBar';
 
 export default function Instrumentando() {
   const [showModal, setShowModal] = useState(false);
@@ -94,7 +96,7 @@ export default function Instrumentando() {
       "@context": "https://schema.org",
       "@type": "Course",
       "name": "Curso de Instrumentação Cirúrgica - 4 Especialidades",
-      "description": "Curso completo de instrumentação cirúrgica com 320 horas certificadas. Especialidades em urologia, ginecologia, plástica e cirurgia geral. Cirurgias de vídeo e abertas.",
+      "description": "Curso completo de instrumentação cirúrgica com 360 horas certificadas. Especialidades em urologia, ginecologia, plástica e cirurgia geral. Cirurgias de vídeo e abertas.",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "Escola Urolaser",
@@ -110,7 +112,7 @@ export default function Instrumentando() {
       "educationalLevel": "Professional",
       "courseMode": "Online",
       "timeRequired": "P1M",
-      "totalTime": "PT320H",
+      "totalTime": "PT360H",
       "coursePrerequisites": "Conhecimento básico em área da saúde",
       "teaches": [
         "Instrumentação em Urologia",
@@ -123,7 +125,7 @@ export default function Instrumentando() {
       "offers": {
         "@type": "Offer",
         "name": "Curso de Instrumentação Cirúrgica",
-        "description": "Curso completo com 320 horas certificadas em 4 especialidades",
+        "description": "Curso completo com 360 horas certificadas em 4 especialidades",
         "availability": "https://schema.org/InStock",
         "validFrom": "2025-01-01",
         "priceValidUntil": "2025-12-31"
@@ -172,7 +174,7 @@ export default function Instrumentando() {
   ];
 
   const benefits = [
-    { icon: <Shield className="w-6 h-6" />, text: "320 horas certificadas" },
+    { icon: <Shield className="w-6 h-6" />, text: "360 horas certificadas" },
     { icon: <Clock className="w-6 h-6" />, text: "1 mês de duração" },
     { icon: <Users className="w-6 h-6" />, text: "4 especialidades" },
     { icon: <Award className="w-6 h-6" />, text: "Certificado reconhecido" },
@@ -181,6 +183,7 @@ export default function Instrumentando() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-green-50 font-['Inter'] overflow-x-hidden">
+      <SalesTopBar />
       {/* Hero Section */}
       <Section 
         background="gradient" 
@@ -191,140 +194,143 @@ export default function Instrumentando() {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-green-900/20"></div>
         
         <Container className="relative z-10">
-          <Grid cols={{ default: 1, lg: 2 }} gap="xl" className="items-center">
-            {/* Content */}
-            <FadeIn direction="left" className="text-center lg:text-center">
+          <div className="max-w-6xl mx-auto text-center">
+            <FadeIn direction="up">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="space-y-6"
+                className="space-y-8"
               >
-                <div className="flex flex-wrap gap-2 justify-center lg:justify-center mb-6">
+                <div className="flex flex-wrap gap-3 justify-center mb-4">
                   {benefits.map((benefit, index) => (
-                    <Badge key={index} variant="secondary" className="bg-white/10 text-white border-white/20 backdrop-blur-sm">
+                    <Badge
+                      key={index}
+                      variant="secondary"
+                      className="bg-white/10 text-white border-white/20 backdrop-blur-md px-4 py-2 text-sm"
+                    >
                       {benefit.icon}
                       <span className="ml-2">{benefit.text}</span>
                     </Badge>
                   ))}
                 </div>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                  Curso de{" "}
-                  <AuroraText 
-                    className="text-4xl sm:text-5xl lg:text-6xl font-bold"
-                    colors={["#00ff88", "#00d4ff", "#ff0080", "#ffaa00"]}
-                  >
-                    Instrumentação Cirúrgica
-                  </AuroraText>
-                </h1>
-                
-                <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
-                  360 horas certificadas • 4 especialidades • Professor @Instrumentandoo
-                </p>
+                <div className="space-y-5 max-w-4xl mx-auto">
+                  <Badge className="bg-green-500/20 text-green-300 border border-green-400/30 px-4 py-2 text-sm sm:text-base">
+                    Turma aberta com acesso imediato
+                  </Badge>
 
-                
+                  <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
+                    Curso de{" "}
+                    <AuroraText
+                      className="text-4xl sm:text-5xl lg:text-7xl font-bold"
+                      colors={["#00ff88", "#00d4ff", "#ff0080", "#ffaa00"]}
+                    >
+                      Instrumentacao Cirurgica
+                    </AuroraText>
+                  </h1>
 
-                {/* Destaque CNIC */}
+                  <div className="max-w-4xl mx-auto rounded-3xl border border-amber-300/25 bg-gradient-to-r from-amber-500/15 to-orange-500/15 backdrop-blur-md p-6 sm:p-8 shadow-2xl shadow-amber-950/20">
+                    <div className="flex items-center justify-center gap-2 mb-3">
+                      <CheckCircle2 className="w-5 h-5 text-amber-300" />
+                      <span className="text-amber-200 font-semibold uppercase tracking-wide text-sm">
+                        Beneficio Exclusivo Urolaser
+                      </span>
+                    </div>
+                    <p className="text-white text-lg sm:text-2xl leading-relaxed font-medium">
+                      Alunos da Urolaser tem direito a acompanhar 1 CIRURGIA presencial na sua cidade,
+                      no final do curso. Assim que pegar seu certificado, voce vai passar 3 hospitais da sua cidade.
+                    </p>
+                  </div>
+
+                  <p className="text-lg sm:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    360 horas certificadas, 4 especialidades e formacao completa com o professor
+                    {" "}@Instrumentandoo.
+                  </p>
+
+                  <p className="text-base sm:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+                    Aprenda do basico ao avancado, tenha um certificado reconhecido e se prepare para
+                    atuar com seguranca em centros cirurgicos de alto nivel.
+                  </p>
+                </div>
+
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: 0.3 }}
-                  className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 rounded-2xl p-6 max-w-2xl"
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="grid gap-4 md:grid-cols-3 max-w-5xl mx-auto"
                 >
-                  <div className="flex items-center justify-center mb-3">
-                    <Award className="w-6 h-6 text-green-400 mr-2" />
-                    <span className="text-green-400 font-bold text-lg">CERTIFICADO RECONHECIDO</span>
-                  </div>
-                  <p className="text-white text-center text-lg leading-relaxed">
-                    Com nosso <span className="font-bold text-green-300">CERTIFICADO</span> é possível adquirir a{" "}
-                    <span className="font-bold text-blue-300">"Carteirinha da ANCI"</span> - a Carteira de Instrumentador Cirúrgico 
-                    do <span className="font-semibold">Agência Nacional de Instrumentadores Cirúrgicos</span>
-                  </p>
-                  <div className="flex justify-center mt-4">
-                    <div className="flex items-center bg-white/10 px-4 py-2 rounded-full">
-                      <CheckCircle2 className="w-5 h-5 text-green-400 mr-2" />
-                      <span className="text-green-300 font-semibold">Reconhecimento Nacional</span>
+                  <div className="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md p-5">
+                    <div className="flex items-center justify-center mb-3">
+                      <Award className="w-6 h-6 text-green-400 mr-2" />
+                      <span className="text-green-300 font-semibold">Certificado Reconhecido</span>
                     </div>
+                    <p className="text-white/85 text-sm sm:text-base leading-relaxed">
+                      Com o certificado, o aluno pode solicitar a carteirinha da ANCI e fortalecer sua
+                      atuacao profissional.
+                    </p>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md p-5">
+                    <div className="flex items-center justify-center mb-3">
+                      <Building2 className="w-6 h-6 text-blue-300 mr-2" />
+                      <span className="text-blue-200 font-semibold">Experiencia Real</span>
+                    </div>
+                    <p className="text-white/85 text-sm sm:text-base leading-relaxed">
+                      Conteudo pensado para quem quer entrar no mercado com mais preparo, confianca e
+                      diferencao.
+                    </p>
+                  </div>
+
+                  <div className="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md p-5">
+                    <div className="flex items-center justify-center mb-3">
+                      <CheckCircle2 className="w-6 h-6 text-green-400 mr-2" />
+                      <span className="text-green-300 font-semibold">Acesso Imediato</span>
+                    </div>
+                    <p className="text-white/85 text-sm sm:text-base leading-relaxed">
+                      Matricule-se hoje e comece agora mesmo pelo celular, tablet ou computador.
+                    </p>
                   </div>
                 </motion.div>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-center pt-6">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
                   <RainbowButton
                     onClick={handlePayment}
-                    className="h-14 px-8 text-lg font-bold"
+                    className="h-14 px-8 text-lg font-bold w-full sm:w-auto"
                   >
                     <Play className="w-5 h-5 mr-2" />
                     INSCREVER-SE AGORA
                   </RainbowButton>
+
+                  <div className="text-white/85 text-sm sm:text-base rounded-full border border-white/15 bg-white/10 px-5 py-3 backdrop-blur-md">
+                    Acesso imediato • Certificado reconhecido • Conteudo completo
+                  </div>
                 </div>
               </motion.div>
             </FadeIn>
 
-            {/* Video */}
-            <FadeIn direction="right" delay={0.3} className="flex justify-center">
+            <FadeIn direction="up" delay={0.35} className="mt-10">
               <motion.div
-                className="w-full max-w-sm lg:max-w-md"
-                whileHover={{ scale: 1.02 }}
+                className="w-full max-w-4xl mx-auto"
+                whileHover={{ scale: 1.01 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <MagicCard className="p-1 bg-gradient-to-br from-blue-600 to-green-600">
+                <MagicCard className="p-1 bg-gradient-to-br from-blue-600 to-green-600 shadow-2xl shadow-blue-950/30">
                   <iframe
                     src="https://drive.google.com/file/d/1-S9UTWvxoaJF8oGOixGi4OUz0IsFgDaW/preview"
-                    className="w-full h-[500px] lg:h-[600px] rounded-xl"
+                    className="w-full h-[360px] sm:h-[480px] lg:h-[620px] rounded-[20px]"
                     allow="autoplay"
-                    title="Apresentação do Curso de Instrumentação Cirúrgica"
+                    title="Apresentacao do Curso de Instrumentacao Cirurgica"
                   ></iframe>
                 </MagicCard>
-                <div className="mt-6">
+                <div className="mt-6 max-w-3xl mx-auto">
                   <PromoBannerHome onBuy={handlePayment} />
                 </div>
               </motion.div>
             </FadeIn>
-          </Grid>
+          </div>
         </Container>
       </Section>
-
-      
-
-      {/* Histórico Escolar */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <FadeIn className="max-w-5xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800">Histórico Escolar</h2>
-
-            <Card className="bg-white shadow-xl overflow-hidden">
-              <CardContent className="p-0">
-                <img
-                  src="/historico-escolar-v2.jpg"
-                  alt="Histórico Escolar: grade escolar e verso do certificado do aluno"
-                  className="w-full h-auto"
-                />
-
-                <div className="p-6">
-                  <p className="text-gray-700 text-lg">
-                    Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno — o Histórico
-                    Escolar. Você encontra os conteúdos básicos, avançados e práticos, além de módulos por vídeo em
-                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">320 horas certificadas</span>
-                    e formação reconhecida.
-                  </p>
-                  <p className="text-gray-700 text-lg mt-4">
-                    Se você quer atuar com segurança e destaque como instrumentador(a) cirúrgico(a), faça sua matrícula
-                    agora e garanta sua vaga.
-                  </p>
-
-                  <div className="mt-6">
-                    <RainbowButton onClick={handlePayment} className="group text-lg px-10 py-5">
-                      <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                      INSCREVER-SE AGORA
-                    </RainbowButton>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </FadeIn>
-        </div>
-      </section>
 
       {/* Professor Section */}
       <section className="py-16 lg:py-24 bg-white">
@@ -493,7 +499,6 @@ export default function Instrumentando() {
                     <p className="text-gray-600">Técnicas avançadas de instrumentação endoscópica</p>
                   </div>
                 </div>
-
               </div>
             </div>
 
@@ -526,6 +531,46 @@ export default function Instrumentando() {
           </div>
         </div>
       </div>
+      {/* Histórico Escolar */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeIn className="max-w-5xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800 text-center">Histórico Escolar</h2>
+
+            <Card className="bg-white shadow-xl overflow-hidden">
+              <CardContent className="p-0">
+                <img
+                  src="/historico-escolar-v2.jpg"
+                  alt="Histórico Escolar: grade escolar e verso do certificado do aluno"
+                  className="w-full h-auto"
+                />
+
+                <div className="p-6">
+                  <p className="text-gray-700 text-lg text-center lg:text-center">
+                    Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno — o Histórico
+                    Escolar. Você encontra os conteúdos básicos, avançados e práticos, além de módulos por vídeo em
+                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">360 horas certificadas</span>
+                    e formação reconhecida.
+                  </p>
+                  <p className="text-gray-700 text-lg mt-4 text-center lg:text-center">
+                    Se você quer atuar com segurança e destaque como instrumentador(a) cirúrgico(a), faça sua matrícula
+                    agora e garanta sua vaga.
+                  </p>
+
+                  <div className="mt-6 flex justify-center">
+                    <RainbowButton onClick={handlePayment} className="group text-lg px-10 py-5">
+                      <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                      INSCREVER-SE AGORA
+                    </RainbowButton>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </FadeIn>
+        </div>
+      </section>
+
+      
 
       {/* CTA Final Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-green-900 text-white">
@@ -632,6 +677,9 @@ export default function Instrumentando() {
           </motion.div>
         </motion.div>
       )}
+      
+      {/* WhatsApp Button específico para página Home */}
+      <WhatsAppButtonFoguete />
     </div>
   );
 }
