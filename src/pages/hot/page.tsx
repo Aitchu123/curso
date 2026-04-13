@@ -1,4 +1,4 @@
-
+﻿
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -33,17 +33,17 @@ import PromoBannerHome from '../../components/ui/PromoBannerHome';
 export default function HotPage() {
   const [showModal, setShowModal] = useState(false);
   const [instagramData, setInstagramData] = useState({
-    followers: '190K',
+    followers: '201K',
     posts: '1,234',
     following: '892'
   });
 
-  // Função para buscar dados do Instagram
+  // FunÃ§Ã£o para buscar dados do Instagram
   const fetchInstagramData = async () => {
     try {
       // Dados reais do Instagram atualizados
       const mockData = {
-        followers: '190K',
+        followers: '201K',
         posts: '1,234',
         following: '892'
       };
@@ -54,7 +54,7 @@ export default function HotPage() {
   };
 
   const handlePayment = () => {
-    // Rastrear conversão de pagamento
+    // Rastrear conversÃ£o de pagamento
     if (typeof gtag !== 'undefined') {
       gtag('event', 'conversion', {
         'send_to': 'AW-17390047491/instrumentacao_pagamento',
@@ -68,8 +68,8 @@ export default function HotPage() {
         'currency': 'BRL',
         'items': [{
           'item_id': 'curso_instrumentacao',
-          'item_name': 'Curso de Instrumentação Cirúrgica',
-          'category': 'Educação',
+          'item_name': 'Curso de InstrumentaÃ§Ã£o CirÃºrgica',
+          'category': 'EducaÃ§Ã£o',
           'quantity': 1
         }]
       });
@@ -81,7 +81,7 @@ export default function HotPage() {
 
 
   useEffect(() => {
-    // Buscar dados do Instagram ao carregar a página
+    // Buscar dados do Instagram ao carregar a pÃ¡gina
     fetchInstagramData();
     
     // Atualizar dados a cada 30 segundos
@@ -93,8 +93,8 @@ export default function HotPage() {
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Course",
-      "name": "Curso de Instrumentação Cirúrgica - 4 Especialidades",
-      "description": "Curso completo de instrumentação cirúrgica com 360 horas certificadas. Especialidades em urologia, ginecologia, plástica e cirurgia geral. Cirurgias de vídeo e abertas.",
+      "name": "Curso de InstrumentaÃ§Ã£o CirÃºrgica - 4 Especialidades",
+      "description": "Curso completo de instrumentaÃ§Ã£o cirÃºrgica com 360 horas certificadas. Especialidades em urologia, ginecologia, plÃ¡stica e cirurgia geral. Cirurgias de vÃ­deo e abertas.",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "Escola Urolaser",
@@ -104,25 +104,25 @@ export default function HotPage() {
       "instructor": {
         "@type": "Person",
         "name": "Instrumentandoo",
-        "description": "Maior influenciador de instrumentação cirúrgica do Brasil",
+        "description": "Maior influenciador de instrumentaÃ§Ã£o cirÃºrgica do Brasil",
         "sameAs": "https://instagram.com/instrumentandoo"
       },
       "educationalLevel": "Professional",
       "courseMode": "Online",
       "timeRequired": "P1M",
       "totalTime": "PT360H",
-      "coursePrerequisites": "Conhecimento básico em área da saúde",
+      "coursePrerequisites": "Conhecimento bÃ¡sico em Ã¡rea da saÃºde",
       "teaches": [
-        "Instrumentação em Urologia",
-        "Instrumentação em Ginecologia", 
-        "Instrumentação em Cirurgia Plástica",
-        "Instrumentação em Cirurgia Geral",
-        "Cirurgias de Vídeo",
+        "InstrumentaÃ§Ã£o em Urologia",
+        "InstrumentaÃ§Ã£o em Ginecologia", 
+        "InstrumentaÃ§Ã£o em Cirurgia PlÃ¡stica",
+        "InstrumentaÃ§Ã£o em Cirurgia Geral",
+        "Cirurgias de VÃ­deo",
         "Cirurgias Abertas"
       ],
       "offers": {
         "@type": "Offer",
-        "name": "Curso de Instrumentação Cirúrgica",
+        "name": "Curso de InstrumentaÃ§Ã£o CirÃºrgica",
         "description": "Curso completo com 360 horas certificadas em 4 especialidades",
         "availability": "https://schema.org/InStock",
         "validFrom": "2025-01-01",
@@ -148,32 +148,32 @@ export default function HotPage() {
     {
       icon: <Stethoscope className="w-8 h-8" />,
       title: "Urologia",
-      description: "Instrumentação completa para cirurgias urológicas, desde procedimentos básicos até avançados",
+      description: "InstrumentaÃ§Ã£o completa para cirurgias urolÃ³gicas, desde procedimentos bÃ¡sicos atÃ© avanÃ§ados",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Ginecologia", 
-      description: "Técnicas especializadas em instrumentação ginecológica e obstétrica",
+      description: "TÃ©cnicas especializadas em instrumentaÃ§Ã£o ginecolÃ³gica e obstÃ©trica",
       color: "from-pink-500 to-pink-600"
     },
     {
       icon: <Scissors className="w-8 h-8" />,
-      title: "Plástica",
-      description: "Instrumentação refinada para cirurgias plásticas e estéticas",
+      title: "PlÃ¡stica",
+      description: "InstrumentaÃ§Ã£o refinada para cirurgias plÃ¡sticas e estÃ©ticas",
       color: "from-purple-500 to-purple-600"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Geral",
-      description: "Fundamentos e técnicas avançadas em cirurgia geral",
+      description: "Fundamentos e tÃ©cnicas avanÃ§adas em cirurgia geral",
       color: "from-green-500 to-green-600"
     }
   ];
 
   const benefits = [
     { icon: <Shield className="w-6 h-6" />, text: "360 horas certificadas" },
-    { icon: <Clock className="w-6 h-6" />, text: "1 mês de duração" },
+    { icon: <Clock className="w-6 h-6" />, text: "1 mÃªs de duraÃ§Ã£o" },
     { icon: <Users className="w-6 h-6" />, text: "4 especialidades" },
     { icon: <Award className="w-6 h-6" />, text: "Certificado reconhecido" },
     { icon: <Play className="w-6 h-6" />, text: "TOTALMENTE ONLINE (EAD)" }
@@ -215,12 +215,12 @@ export default function HotPage() {
                     className="text-4xl sm:text-5xl lg:text-6xl font-bold"
                     colors={["#00ff88", "#00d4ff", "#ff0080", "#ffaa00"]}
                   >
-                    Instrumentação Cirúrgica
+                    InstrumentaÃ§Ã£o CirÃºrgica
                   </AuroraText>
                 </h1>
                 
                 <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
-                  360 horas certificadas • 4 especialidades • Professor @Instrumentandoo
+                  360 horas certificadas â€¢ 4 especialidades â€¢ Professor @Instrumentandoo
                 </p>
 
                 
@@ -237,9 +237,9 @@ export default function HotPage() {
                     <span className="text-green-400 font-bold text-lg">CERTIFICADO RECONHECIDO</span>
                   </div>
                   <p className="text-white text-center text-lg leading-relaxed">
-                    Com nosso <span className="font-bold text-green-300">CERTIFICADO</span> é possível adquirir a{" "}
-                    <span className="font-bold text-blue-300">"Carteirinha da ANCI"</span> - a Carteira de Instrumentador Cirúrgico 
-                    do <span className="font-semibold">Agência Nacional de Instrumentadores Cirúrgicos</span>
+                    Com nosso <span className="font-bold text-green-300">CERTIFICADO</span> Ã© possÃ­vel adquirir a{" "}
+                    <span className="font-bold text-blue-300">"Carteirinha da ANCI"</span> - a Carteira de Instrumentador CirÃºrgico 
+                    do <span className="font-semibold">AgÃªncia Nacional de Instrumentadores CirÃºrgicos</span>
                   </p>
                   <div className="flex justify-center mt-4">
                     <div className="flex items-center bg-white/10 px-4 py-2 rounded-full">
@@ -273,7 +273,7 @@ export default function HotPage() {
                     src="https://drive.google.com/file/d/1-S9UTWvxoaJF8oGOixGi4OUz0IsFgDaW/preview"
                     className="w-full h-[500px] lg:h-[600px] rounded-xl"
                     allow="autoplay"
-                    title="Apresentação do Curso de Instrumentação Cirúrgica"
+                    title="ApresentaÃ§Ã£o do Curso de InstrumentaÃ§Ã£o CirÃºrgica"
                   ></iframe>
                 </MagicCard>
                 <div className="mt-6">
@@ -287,29 +287,29 @@ export default function HotPage() {
 
       
 
-      {/* Histórico Escolar */}
+      {/* HistÃ³rico Escolar */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="max-w-5xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800">Histórico Escolar</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800">HistÃ³rico Escolar</h2>
 
             <Card className="bg-white shadow-xl overflow-hidden">
               <CardContent className="p-0">
                 <img
                   src="/historico-escolar-v2.jpg"
-                  alt="Histórico Escolar: grade escolar e verso do certificado do aluno"
+                  alt="HistÃ³rico Escolar: grade escolar e verso do certificado do aluno"
                   className="w-full h-auto"
                 />
 
                 <div className="p-6">
                   <p className="text-gray-700 text-lg">
-                    Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno — o Histórico
-                    Escolar. Você encontra os conteúdos básicos, avançados e práticos, além de módulos por vídeo em
-                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">360 horas certificadas</span>
-                    e formação reconhecida.
+                    Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno â€” o HistÃ³rico
+                    Escolar. VocÃª encontra os conteÃºdos bÃ¡sicos, avanÃ§ados e prÃ¡ticos, alÃ©m de mÃ³dulos por vÃ­deo em
+                    Urologia, Ginecologia e PlÃ¡stica. Ã‰ a comprovaÃ§Ã£o de um programa completo, com <span className="font-semibold">360 horas certificadas</span>
+                    e formaÃ§Ã£o reconhecida.
                   </p>
                   <p className="text-gray-700 text-lg mt-4">
-                    Se você quer atuar com segurança e destaque como instrumentador(a) cirúrgico(a), faça sua matrícula
+                    Se vocÃª quer atuar com seguranÃ§a e destaque como instrumentador(a) cirÃºrgico(a), faÃ§a sua matrÃ­cula
                     agora e garanta sua vaga.
                   </p>
 
@@ -346,7 +346,7 @@ export default function HotPage() {
                 
                 <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-800">@Instrumentandoo</h3>
                 <p className="text-xl text-blue-600 font-semibold mb-8">
-                  MAIOR Influenciador de Instrumentação Cirúrgica do Brasil
+                  MAIOR Influenciador de InstrumentaÃ§Ã£o CirÃºrgica do Brasil
                 </p>
                 
                 {/* Instagram Stats */}
@@ -434,7 +434,7 @@ export default function HotPage() {
               4 Especialidades Completas
             </h2>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Domine as principais áreas da instrumentação cirúrgica com técnicas avançadas
+              Domine as principais Ã¡reas da instrumentaÃ§Ã£o cirÃºrgica com tÃ©cnicas avanÃ§adas
             </p>
           </FadeIn>
           
@@ -468,29 +468,29 @@ export default function HotPage() {
         </div>
       </section>
 
-      {/* Conteúdo do Curso */}
+      {/* ConteÃºdo do Curso */}
       <div className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
-            O que você vai aprender
+            O que vocÃª vai aprender
           </h2>
           
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Cirurgias de Vídeo</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Cirurgias de VÃ­deo</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <i className="ri-play-circle-fill text-blue-500 text-xl mr-3 mt-1"></i>
                   <div>
                     <h4 className="font-semibold text-gray-800">Laparoscopia</h4>
-                    <p className="text-gray-600">Instrumentação para cirurgias minimamente invasivas</p>
+                    <p className="text-gray-600">InstrumentaÃ§Ã£o para cirurgias minimamente invasivas</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <i className="ri-play-circle-fill text-blue-500 text-xl mr-3 mt-1"></i>
                   <div>
                     <h4 className="font-semibold text-gray-800">Endoscopia</h4>
-                    <p className="text-gray-600">Técnicas avançadas de instrumentação endoscópica</p>
+                    <p className="text-gray-600">TÃ©cnicas avanÃ§adas de instrumentaÃ§Ã£o endoscÃ³pica</p>
                   </div>
                 </div>
 
@@ -503,22 +503,22 @@ export default function HotPage() {
                 <div className="flex items-start">
                   <i className="ri-scissors-cut-fill text-green-500 text-xl mr-3 mt-1"></i>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Técnicas Clássicas</h4>
-                    <p className="text-gray-600">Instrumentação tradicional e eficiente</p>
+                    <h4 className="font-semibold text-gray-800">TÃ©cnicas ClÃ¡ssicas</h4>
+                    <p className="text-gray-600">InstrumentaÃ§Ã£o tradicional e eficiente</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <i className="ri-scissors-cut-fill text-green-500 text-xl mr-3 mt-1"></i>
                   <div>
                     <h4 className="font-semibold text-gray-800">Instrumentos Especiais</h4>
-                    <p className="text-gray-600">Uso correto de instrumentos específicos</p>
+                    <p className="text-gray-600">Uso correto de instrumentos especÃ­ficos</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <i className="ri-scissors-cut-fill text-green-500 text-xl mr-3 mt-1"></i>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Organização</h4>
-                    <p className="text-gray-600">Mesa cirúrgica organizada e eficiente</p>
+                    <h4 className="font-semibold text-gray-800">OrganizaÃ§Ã£o</h4>
+                    <p className="text-gray-600">Mesa cirÃºrgica organizada e eficiente</p>
                   </div>
                 </div>
               </div>
@@ -539,16 +539,16 @@ export default function HotPage() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-                Não perca esta oportunidade!
+                NÃ£o perca esta oportunidade!
               </h2>
               <p className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Torne-se um especialista em instrumentação cirúrgica com o maior influenciador do Brasil. 
+                Torne-se um especialista em instrumentaÃ§Ã£o cirÃºrgica com o maior influenciador do Brasil. 
                 360 horas certificadas em 4 especialidades!
               </p>
               
               <div className="flex flex-wrap gap-6 justify-center items-center mb-12">
                 {[
-                  { icon: <Clock className="w-6 h-6" />, text: "1 Mês de Duração" },
+                  { icon: <Clock className="w-6 h-6" />, text: "1 MÃªs de DuraÃ§Ã£o" },
                   { icon: <Award className="w-6 h-6" />, text: "360 Horas Certificadas" },
                   { icon: <Star className="w-6 h-6" />, text: "4 Especialidades" }
                 ].map((item, index) => (
@@ -580,7 +580,7 @@ export default function HotPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <p className="text-gray-400">
-              © 2025 Escola Urolaser - Curso de Instrumentação Cirúrgica. Todos os direitos reservados. | 
+              Â© 2025 Escola Urolaser - Curso de InstrumentaÃ§Ã£o CirÃºrgica. Todos os direitos reservados. | 
               <a href="https://readdy.ai/?origin=logo" className="text-green-400 hover:text-green-300 ml-2">
                 Powered by Readdy
               </a>
@@ -591,7 +591,7 @@ export default function HotPage() {
 
 
 
-      {/* Modal de Confirmação */}
+      {/* Modal de ConfirmaÃ§Ã£o */}
       {showModal && (
         <motion.div
           className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
@@ -610,7 +610,7 @@ export default function HotPage() {
               <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle2 className="text-white w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">Informações Enviadas!</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">InformaÃ§Ãµes Enviadas!</h3>
               <p className="text-gray-600 mb-6">
                 Obrigado pelo interesse! Em breve entraremos em contato com mais detalhes sobre o curso.
               </p>
@@ -635,3 +635,4 @@ export default function HotPage() {
     </div>
   );
 }
+
