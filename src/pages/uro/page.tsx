@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Heart, 
@@ -37,7 +37,7 @@ export default function URO() {
     following: '892'
   });
 
-  // FunÃ§Ã£o para buscar dados do Instagram
+  // Função para buscar dados do Instagram
   const fetchInstagramData = async () => {
     try {
       // Dados reais do Instagram atualizados
@@ -53,7 +53,7 @@ export default function URO() {
   };
 
   const handlePayment = () => {
-    // Rastrear conversÃ£o de pagamento
+    // Rastrear conversão de pagamento
     if (typeof gtag !== 'undefined') {
       gtag('event', 'conversion', {
         'send_to': 'AW-17390047491/instrumentacao_pagamento',
@@ -67,8 +67,8 @@ export default function URO() {
         'currency': 'BRL',
         'items': [{
           'item_id': 'curso_instrumentacao',
-          'item_name': 'Curso de InstrumentaÃ§Ã£o CirÃºrgica',
-          'category': 'EducaÃ§Ã£o',
+          'item_name': 'Curso de Instrumentação Cirúrgica',
+          'category': 'Educação',
           'quantity': 1
         }]
       });
@@ -78,7 +78,7 @@ export default function URO() {
   };
 
   useEffect(() => {
-    // Buscar dados do Instagram ao carregar a pÃ¡gina
+    // Buscar dados do Instagram ao carregar a página
     fetchInstagramData();
     
     // Atualizar dados a cada 30 segundos
@@ -90,8 +90,8 @@ export default function URO() {
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Course",
-      "name": "Curso de InstrumentaÃ§Ã£o CirÃºrgica - URO",
-      "description": "Curso completo de instrumentaÃ§Ã£o cirÃºrgica com 320 horas certificadas. Especialidades em urologia, ginecologia, plÃ¡stica e cirurgia geral.",
+      "name": "Curso de Instrumentação Cirúrgica - URO",
+      "description": "Curso completo de instrumentação cirúrgica com 320 horas certificadas. Especialidades em urologia, ginecologia, plástica e cirurgia geral.",
       "provider": {
         "@type": "EducationalOrganization",
         "name": "Escola Urolaser",
@@ -101,25 +101,25 @@ export default function URO() {
       "instructor": {
         "@type": "Person",
         "name": "Instrumentandoo",
-        "description": "Maior influenciador de instrumentaÃ§Ã£o cirÃºrgica do Brasil",
+        "description": "Maior influenciador de instrumentação cirúrgica do Brasil",
         "sameAs": "https://instagram.com/instrumentandoo"
       },
       "educationalLevel": "Professional",
       "courseMode": "Online",
       "timeRequired": "P1M",
       "totalTime": "PT320H",
-      "coursePrerequisites": "Conhecimento bÃ¡sico em Ã¡rea da saÃºde",
+      "coursePrerequisites": "Conhecimento básico em área da saúde",
       "teaches": [
-        "InstrumentaÃ§Ã£o em Urologia",
-        "InstrumentaÃ§Ã£o em Ginecologia", 
-        "InstrumentaÃ§Ã£o em Cirurgia PlÃ¡stica",
-        "InstrumentaÃ§Ã£o em Cirurgia Geral",
-        "Cirurgias de VÃ­deo",
+        "Instrumentação em Urologia",
+        "Instrumentação em Ginecologia", 
+        "Instrumentação em Cirurgia Plástica",
+        "Instrumentação em Cirurgia Geral",
+        "Cirurgias de Vídeo",
         "Cirurgias Abertas"
       ],
       "offers": {
         "@type": "Offer",
-        "name": "Curso de InstrumentaÃ§Ã£o CirÃºrgica",
+        "name": "Curso de Instrumentação Cirúrgica",
         "description": "Curso completo com 360 horas certificadas em 4 especialidades",
         "availability": "https://schema.org/InStock",
         "validFrom": "2025-01-01",
@@ -145,32 +145,32 @@ export default function URO() {
     {
       icon: <Stethoscope className="w-8 h-8" />,
       title: "Urologia",
-      description: "InstrumentaÃ§Ã£o completa para cirurgias urolÃ³gicas, desde procedimentos bÃ¡sicos atÃ© avanÃ§ados",
+      description: "Instrumentação completa para cirurgias urológicas, desde procedimentos básicos até avançados",
       color: "from-blue-500 to-blue-600"
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Ginecologia", 
-      description: "TÃ©cnicas especializadas em instrumentaÃ§Ã£o ginecolÃ³gica e obstÃ©trica",
+      description: "Técnicas especializadas em instrumentação ginecológica e obstétrica",
       color: "from-pink-500 to-pink-600"
     },
     {
       icon: <Scissors className="w-8 h-8" />,
-      title: "PlÃ¡stica",
-      description: "InstrumentaÃ§Ã£o refinada para cirurgias plÃ¡sticas e estÃ©ticas",
+      title: "Plástica",
+      description: "Instrumentação refinada para cirurgias plásticas e estéticas",
       color: "from-purple-500 to-purple-600"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Geral",
-      description: "Fundamentos e tÃ©cnicas avanÃ§adas em cirurgia geral",
+      description: "Fundamentos e técnicas avançadas em cirurgia geral",
       color: "from-green-500 to-green-600"
     }
   ];
 
   const benefits = [
     { icon: <Shield className="w-6 h-6" />, text: "320 horas certificadas" },
-    { icon: <Clock className="w-6 h-6" />, text: "1 mÃªs de duraÃ§Ã£o" },
+    { icon: <Clock className="w-6 h-6" />, text: "1 mês de duração" },
     { icon: <Users className="w-6 h-6" />, text: "4 especialidades" },
     { icon: <Award className="w-6 h-6" />, text: "Certificado reconhecido" },
     { icon: <Play className="w-6 h-6" />, text: "TOTALMENTE ONLINE (EAD)" }
@@ -207,7 +207,7 @@ export default function URO() {
                 </div>
 
                 <div className="bg-red-600 text-white px-6 py-3 rounded-full mb-6 inline-block">
-                  <span className="font-bold">âš ï¸ ÃšLTIMO DIA HOJE PARA MATRÃCULA, TURMA ABERTA</span>
+                  <span className="font-bold">⚠️ ÚLTIMO DIA HOJE PARA MATRÍCULA, TURMA ABERTA</span>
                 </div>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
                   Curso de{" "}
@@ -215,12 +215,12 @@ export default function URO() {
                     className="text-4xl sm:text-5xl lg:text-6xl font-bold"
                     colors={["#00ff88", "#00d4ff", "#ff0080", "#ffaa00"]}
                   >
-                    InstrumentaÃ§Ã£o CirÃºrgica
+                    Instrumentação Cirúrgica
                   </AuroraText>
                 </h1>
                 
                 <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
-                  360 horas certificadas â€¢ 4 especialidades â€¢ Professor @Instrumentandoo
+                  360 horas certificadas • 4 especialidades • Professor @Instrumentandoo
                 </p>
 
                 <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm border border-green-400/30 rounded-2xl p-6 max-w-2xl">
@@ -229,9 +229,9 @@ export default function URO() {
                     <span className="text-green-400 font-bold text-lg">CERTIFICADO RECONHECIDO</span>
                   </div>
                   <p className="text-white text-center text-lg leading-relaxed">
-                    Com nosso <span className="font-bold text-green-300">CERTIFICADO</span> Ã© possÃ­vel adquirir a{" "}
-                    <span className="font-bold text-blue-300">"Carteirinha da ANCI"</span> - a Carteira de Instrumentador CirÃºrgico 
-                    do <span className="font-semibold">AgÃªncia Nacional de Instrumentadores CirÃºrgicos</span>
+                    Com nosso <span className="font-bold text-green-300">CERTIFICADO</span> é possível adquirir a{" "}
+                    <span className="font-bold text-blue-300">"Carteirinha da ANCI"</span> - a Carteira de Instrumentador Cirúrgico 
+                    do <span className="font-semibold">Agência Nacional de Instrumentadores Cirúrgicos</span>
                   </p>
                   <div className="flex justify-center mt-4">
                     <div className="flex items-center bg-white/10 px-4 py-2 rounded-full">
@@ -244,7 +244,7 @@ export default function URO() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-center pt-6">
                   <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white px-6 py-4 rounded-2xl border-2 border-red-400">
                     <div className="text-center">
-                      <div className="text-sm mb-1">PREÃ‡O ESPECIAL</div>
+                      <div className="text-sm mb-1">PREÇO ESPECIAL</div>
                       <div className="text-lg line-through opacity-70">R$ 377,00</div>
                       <div className="text-3xl font-bold">R$ 247,00</div>
                       <div className="text-sm">ou 12x de R$ 24,00</div>
@@ -273,14 +273,14 @@ export default function URO() {
                     src="https://drive.google.com/file/d/1nHhNCkKxa0BJ7NBOGZPxRQz__FaWeC6W/preview"
                     className="w-full h-[500px] lg:h-[600px] rounded-xl"
                     allow="autoplay"
-                    title="ApresentaÃ§Ã£o do Curso de InstrumentaÃ§Ã£o CirÃºrgica"
+                    title="Apresentação do Curso de Instrumentação Cirúrgica"
                   ></iframe>
                 </MagicCard>
                 <div className="mt-6">
                   <div className="bg-gradient-to-r from-red-500/20 to-orange-500/20 backdrop-blur-sm border border-red-400/30 rounded-2xl p-6">
                     <div className="text-center">
                       <div className="bg-red-600 text-white px-4 py-2 rounded-full mb-4 inline-block">
-                        <span className="font-bold text-sm">âš ï¸ ÃšLTIMO DIA HOJE PARA MATRÃCULA, TURMA ABERTA</span>
+                        <span className="font-bold text-sm">⚠️ ÚLTIMO DIA HOJE PARA MATRÍCULA, TURMA ABERTA</span>
                       </div>
                       <h3 className="text-2xl font-bold text-white mb-2">INVESTIMENTO</h3>
                       <div className="mb-2">
@@ -323,7 +323,7 @@ export default function URO() {
                 
                 <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-800">@Instrumentandoo</h3>
                 <p className="text-xl text-blue-600 font-semibold mb-8">
-                  MAIOR Influenciador de InstrumentaÃ§Ã£o CirÃºrgica do Brasil
+                  MAIOR Influenciador de Instrumentação Cirúrgica do Brasil
                 </p>
                 
                 {/* Instagram Stats */}
@@ -411,7 +411,7 @@ export default function URO() {
               4 Especialidades Completas
             </h2>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Domine as principais Ã¡reas da instrumentaÃ§Ã£o cirÃºrgica com tÃ©cnicas avanÃ§adas
+              Domine as principais áreas da instrumentação cirúrgica com técnicas avançadas
             </p>
           </FadeIn>
           
@@ -445,29 +445,29 @@ export default function URO() {
         </div>
       </section>
 
-      {/* ConteÃºdo do Curso */}
+      {/* Conteúdo do Curso */}
       <div className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
-            O que vocÃª vai aprender
+            O que você vai aprender
           </h2>
           
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Cirurgias de VÃ­deo</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Cirurgias de Vídeo</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <i className="ri-play-circle-fill text-blue-500 text-xl mr-3 mt-1"></i>
                   <div>
                     <h4 className="font-semibold text-gray-800">Laparoscopia</h4>
-                    <p className="text-gray-600">InstrumentaÃ§Ã£o para cirurgias minimamente invasivas</p>
+                    <p className="text-gray-600">Instrumentação para cirurgias minimamente invasivas</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <i className="ri-play-circle-fill text-blue-500 text-xl mr-3 mt-1"></i>
                   <div>
                     <h4 className="font-semibold text-gray-800">Endoscopia</h4>
-                    <p className="text-gray-600">TÃ©cnicas avanÃ§adas de instrumentaÃ§Ã£o endoscÃ³pica</p>
+                    <p className="text-gray-600">Técnicas avançadas de instrumentação endoscópica</p>
                   </div>
                 </div>
               </div>
@@ -479,22 +479,22 @@ export default function URO() {
                 <div className="flex items-start">
                   <i className="ri-scissors-cut-fill text-green-500 text-xl mr-3 mt-1"></i>
                   <div>
-                    <h4 className="font-semibold text-gray-800">TÃ©cnicas ClÃ¡ssicas</h4>
-                    <p className="text-gray-600">InstrumentaÃ§Ã£o tradicional e eficiente</p>
+                    <h4 className="font-semibold text-gray-800">Técnicas Clássicas</h4>
+                    <p className="text-gray-600">Instrumentação tradicional e eficiente</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <i className="ri-scissors-cut-fill text-green-500 text-xl mr-3 mt-1"></i>
                   <div>
                     <h4 className="font-semibold text-gray-800">Instrumentos Especiais</h4>
-                    <p className="text-gray-600">Uso correto de instrumentos especÃ­ficos</p>
+                    <p className="text-gray-600">Uso correto de instrumentos específicos</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <i className="ri-scissors-cut-fill text-green-500 text-xl mr-3 mt-1"></i>
                   <div>
-                    <h4 className="font-semibold text-gray-800">OrganizaÃ§Ã£o</h4>
-                    <p className="text-gray-600">Mesa cirÃºrgica organizada e eficiente</p>
+                    <h4 className="font-semibold text-gray-800">Organização</h4>
+                    <p className="text-gray-600">Mesa cirúrgica organizada e eficiente</p>
                   </div>
                 </div>
               </div>
@@ -506,25 +506,25 @@ export default function URO() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="max-w-5xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800 text-center">HistÃ³rico Escolar</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800 text-center">Histórico Escolar</h2>
 
             <Card className="bg-white shadow-xl overflow-hidden">
               <CardContent className="p-0">
                 <img
                   src="/historico-escolar-v2.jpg"
-                  alt="HistÃ³rico Escolar: grade escolar e verso do certificado do aluno"
+                  alt="Histórico Escolar: grade escolar e verso do certificado do aluno"
                   className="w-full h-auto"
                 />
 
                 <div className="p-6">
                   <p className="text-gray-700 text-lg text-center lg:text-center">
-                    Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno â€” o HistÃ³rico
-                    Escolar. VocÃª encontra os conteÃºdos bÃ¡sicos, avanÃ§ados e prÃ¡ticos, alÃ©m de mÃ³dulos por vÃ­deo em
-                    Urologia, Ginecologia e PlÃ¡stica. Ã‰ a comprovaÃ§Ã£o de um programa completo, com <span className="font-semibold">360 horas certificadas</span>
-                    e formaÃ§Ã£o reconhecida.
+                    Esta imagem apresenta a grade curricular do curso e o verso do certificado do aluno — o Histórico
+                    Escolar. Você encontra os conteúdos básicos, avançados e práticos, além de módulos por vídeo em
+                    Urologia, Ginecologia e Plástica. É a comprovação de um programa completo, com <span className="font-semibold">360 horas certificadas</span>
+                    e formação reconhecida.
                   </p>
                   <p className="text-gray-700 text-lg mt-4 text-center lg:text-center">
-                    Se vocÃª quer atuar com seguranÃ§a e destaque como instrumentador(a) cirÃºrgico(a), faÃ§a sua matrÃ­cula
+                    Se você quer atuar com segurança e destaque como instrumentador(a) cirúrgico(a), faça sua matrícula
                     agora e garanta sua vaga.
                   </p>
 
@@ -553,19 +553,19 @@ export default function URO() {
               transition={{ duration: 0.8 }}
             >
               <div className="bg-red-600 text-white px-6 py-3 rounded-full mb-8 inline-block">
-                <span className="font-bold">âš ï¸ ÃšLTIMO DIA HOJE PARA MATRÃCULA, TURMA ABERTA</span>
+                <span className="font-bold">⚠️ ÚLTIMO DIA HOJE PARA MATRÍCULA, TURMA ABERTA</span>
               </div>
               <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-                ÃšLTIMAS VAGAS!
+                ÚLTIMAS VAGAS!
               </h2>
               <p className="text-xl lg:text-2xl mb-12 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Torne-se um especialista em instrumentaÃ§Ã£o cirÃºrgica com o maior influenciador do Brasil. 
+                Torne-se um especialista em instrumentação cirúrgica com o maior influenciador do Brasil. 
                 360 horas certificadas em 4 especialidades!
               </p>
               
               <div className="flex flex-wrap gap-6 justify-center items-center mb-12">
                 {[
-                  { icon: <Clock className="w-6 h-6" />, text: "1 MÃªs de DuraÃ§Ã£o" },
+                  { icon: <Clock className="w-6 h-6" />, text: "1 Mês de Duração" },
                   { icon: <Award className="w-6 h-6" />, text: "360 Horas Certificadas" },
                   { icon: <Star className="w-6 h-6" />, text: "4 Especialidades" }
                 ].map((item, index) => (
@@ -597,7 +597,7 @@ export default function URO() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <p className="text-gray-400">
-              Â© 2025 Escola Urolaser - Curso de InstrumentaÃ§Ã£o CirÃºrgica. Todos os direitos reservados. | 
+              © 2025 Escola Urolaser - Curso de Instrumentação Cirúrgica. Todos os direitos reservados. | 
               <a href="https://readdy.ai/?origin=logo" className="text-green-400 hover:text-green-300 ml-2">
                 Powered by Readdy
               </a>
@@ -606,7 +606,7 @@ export default function URO() {
         </div>
       </footer>
 
-      {/* WhatsApp Button especÃ­fico para pÃ¡gina URO */}
+      {/* WhatsApp Button específico para página URO */}
       <WhatsAppButtonFoguete message="Quero saber mais" />
     </div>
   );

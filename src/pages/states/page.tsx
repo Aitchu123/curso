@@ -1,4 +1,4 @@
-﻿
+
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -220,7 +220,7 @@ export default function StatesPage() {
                 </h1>
                 
                 <p className="text-xl sm:text-2xl text-blue-100 max-w-2xl">
-                  320 Certified Hours â€¢ 4 Specialties â€¢ Instructor @Instrumentandoo
+                  320 Certified Hours • 4 Specialties • Instructor @Instrumentandoo
                 </p>
 
                 
@@ -287,7 +287,7 @@ export default function StatesPage() {
 
       
 
-      {/* HistÃ³rico Escolar */}
+      {/* Histórico Escolar */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn className="max-w-5xl mx-auto">
@@ -304,7 +304,7 @@ export default function StatesPage() {
 
                 <div className="p-6">
                   <p className="text-gray-700 text-lg text-center lg:text-center">
-                    This image shows the course curriculum and the back of the student certificate â€” the Academic Transcript.
+                    This image shows the course curriculum and the back of the student certificate — the Academic Transcript.
                     You will find basic, advanced, and practical contents, as well as video modules in Urology, Gynecology,
                     and Plastic Surgery. It is the proof of a complete program, with <span className="font-semibold">360 certified hours</span>
                     and recognized training.
@@ -469,7 +469,7 @@ export default function StatesPage() {
         </div>
       </section>
 
-      {/* ConteÃºdo do Curso */}
+      {/* Conteúdo do Curso */}
       <div className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
@@ -581,7 +581,7 @@ export default function StatesPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <p className="text-gray-400">
-              Â© 2025 Urolaser School - Surgical Instrumentation Course. All rights reserved. | 
+              © 2025 Urolaser School - Surgical Instrumentation Course. All rights reserved. | 
               <a href="https://readdy.ai/?origin=logo" className="text-green-400 hover:text-green-300 ml-2">
                 Powered by Readdy
               </a>
@@ -592,7 +592,7 @@ export default function StatesPage() {
 
 
 
-      {/* Modal de ConfirmaÃ§Ã£o */}
+      {/* Modal de Confirmação */}
       {showModal && (
         <motion.div
           className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
