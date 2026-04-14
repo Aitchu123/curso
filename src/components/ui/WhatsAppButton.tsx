@@ -14,7 +14,7 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ forceNumber }) => {
     let targetNumber = forceNumber;
 
     if (!targetNumber) {
-      const pool = ['5521972762708', '5512982044856'];
+      const pool = ['5512982044856'];
       let idx = 0;
       try {
         const buf = new Uint32Array(1);
