@@ -115,7 +115,7 @@ export default function HotPage() {
   const heroHighlights = [
     { icon: <Shield className="w-5 h-5" />, text: "360 horas certificadas" },
     { icon: <Clock className="w-5 h-5" />, text: "Acesso imediato" },
-    { icon: <Play className="w-5 h-5" />, text: "100% online" }
+    { icon: <Play className="w-5 h-5" />, text: "1 cirurgia presencial na sua cidade só para acompanhar" }
   ];
 
   const problemPoints = [
