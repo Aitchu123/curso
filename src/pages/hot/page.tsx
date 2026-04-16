@@ -115,7 +115,6 @@ export default function HotPage() {
   const heroHighlights = [
     { icon: <Shield className="w-5 h-5" />, text: "360 horas certificadas" },
     { icon: <Clock className="w-5 h-5" />, text: "Acesso imediato" },
-    { icon: <Users className="w-5 h-5" />, text: "Pensado para iniciantes" },
     { icon: <Play className="w-5 h-5" />, text: "100% online" }
   ];
 
@@ -329,7 +328,7 @@ export default function HotPage() {
                       Instrumentação Cirúrgica
                     </AuroraText>
                     {" "}
-                    com mais clareza, segurança e direção, mesmo começando do zero
+                    e Especializações Incluídas
                   </h1>
 
                   <p className="text-lg sm:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
