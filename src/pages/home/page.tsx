@@ -408,26 +408,6 @@ export default function Instrumentando() {
               </motion.div>
             </FadeIn>
 
-            <FadeIn direction="up" delay={0.28} className="mt-8">
-              <div className="max-w-4xl mx-auto rounded-3xl border border-amber-300/25 bg-gradient-to-r from-amber-500/15 to-orange-500/15 backdrop-blur-md p-6 sm:p-8 shadow-2xl shadow-amber-950/20">
-                <div className="flex items-center justify-center gap-2 mb-3">
-                  <CheckCircle2 className="w-5 h-5 text-amber-300" />
-                  <span className="text-amber-200 font-semibold uppercase tracking-wide text-sm">
-                    Benefício Exclusivo Urolaser
-                  </span>
-                </div>
-                <p className="text-white text-lg sm:text-2xl leading-relaxed font-medium">
-                  Alunos da Urolaser têm direito a acompanhar
-                  {" "}
-                  <span className="font-bold">1 cirurgia presencial</span>
-                  {" "}na sua cidade. Ao concluir o curso e pegar seu certificado, você informa
-                  {" "}
-                  <span className="font-bold">3 hospitais</span>
-                  {" "}da sua região para avaliação.
-                </p>
-              </div>
-            </FadeIn>
-
             <FadeIn direction="up" delay={0.35} className="mt-10">
               <motion.div
                 className="w-full max-w-4xl mx-auto"
